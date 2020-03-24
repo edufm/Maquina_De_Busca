@@ -1,11 +1,15 @@
 import json
+import nltk
+import re
+
+
 from argparse import ArgumentParser
 from collections import defaultdict
-
 from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+from nltk.stem import PorterStemmer
 
-
-def create_repo(corpus):
+def create_repo(corpus, stop_words=True, normalize=True, subs=True):
     '''Cria o repositorio.
 
     Args:
@@ -15,8 +19,28 @@ def create_repo(corpus):
     Returns:
         Um dicionário que mapeia docid para uma lista de tokens.
     '''
-    return {docid: word_tokenize(text) for docid, text in corpus.items()}
+    nltk.download('stopwords')
+    
+    repo = {}
+  
+    for docid, text in corpus.items():
 
+        text = re.sub(r"[^a-zA-Z0-9 ]", "", text, flags=re.DOTALL|re.MULTILINE)
+        text_tokens = word_tokenize(text)
+        if(stop_words):
+            text_tokens = [word for word in text_tokens if not word in stopwords.words()]
+        
+        #if(subs):
+        #    text_tokens = [word for word in text_tokens if 'NN' in nltk.pos_tag(word)[1]]
+        
+        if(normalize):
+            text_tokens = [PorterStemmer().stem(word) for word in text_tokens]
+
+        repo[docid] = text_tokens
+
+
+        
+    return repo
 
 def create_index(repo):
     '''Indexa os documentos de um corpus.
@@ -29,13 +53,12 @@ def create_index(repo):
         lista de docids.
     '''
 
-    indexed = defaultdict(set)
+    indexed = defaultdict(lambda:defaultdict(int))
     for doc_id, words in repo.items():
         for word in words:
-            indexed[word].add(doc_id)
+            indexed[word][doc_id] +=1
 
-    return {word: list(doc_ids) for word, doc_ids in indexed.items()}
-
+    return indexed
 
 def main():
     parser = ArgumentParser()

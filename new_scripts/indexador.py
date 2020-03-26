@@ -26,13 +26,19 @@ def create_repo(corpus, stop_words=True, normalize=True, subs=True):
     for docid, text in corpus.items():
 
         text = re.sub(r"[^a-zA-Z0-9 ]", "", text, flags=re.DOTALL|re.MULTILINE)
+        
+        # tokenize
         text_tokens = word_tokenize(text)
+        
+        # Remove stop_words
         if(stop_words):
             text_tokens = [word for word in text_tokens if not word in stopwords.words()]
+        
         
         #if(subs):
         #    text_tokens = [word for word in text_tokens if 'NN' in nltk.pos_tag(word)[1]]
         
+        # Normalize
         if(normalize):
             text_tokens = [PorterStemmer().stem(word) for word in text_tokens]
 
@@ -54,6 +60,7 @@ def create_index(repo):
     '''
 
     indexed = defaultdict(lambda:defaultdict(int))
+    
     for doc_id, words in repo.items():
         for word in words:
             indexed[word][doc_id] +=1

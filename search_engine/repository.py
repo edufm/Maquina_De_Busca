@@ -1,41 +1,16 @@
 '''Funções para manipulação de corpus, repositórios e indices.
 '''
-import json
 from collections import defaultdict
-
-import re
-
-import nltk
-
-import nltk.corpus as nltk_corpus
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
+import nltk.corpus as nltk_corpus
+import nltk
+import json
+import re
 
 
 # -------------------------- Criação dos jsons --------------------------------
-def create_corpus(target="reuters"):
-    '''Cria o corpus a partir do NLTK
-
-    Args:
-        target: Corpo alvo do NLTK
-        filename: nome do arquivo de saida para o corpus
-    
-    Returns:
-        Um dicionario que tem os dados do corpus
-    '''
-    if target == "reuters":
-        corpus = nltk_corpus.reuters
-    else:
-        raise Exception(f"Corpus {target} not implemented yet")
-
-    docs = {}
-    for fileid in corpus.fileids():
-        docs[fileid] = corpus.raw(fileid)
-
-    return docs
-
-
 def create_repo(corpus, do_stopwords=True, do_normalize=True):
     '''Cria o repositorio.
 
@@ -71,8 +46,9 @@ def create_repo(corpus, do_stopwords=True, do_normalize=True):
             text_tokens = [stemmer.stem(word) for word in text_tokens]
 
         repo[docid] = text_tokens
-        
+
     return repo
+
     
 
 def create_index(repo):
@@ -85,7 +61,6 @@ def create_index(repo):
         O índice reverso do repositorio: um dicionario que mapeia token para
         lista de docids.
     '''
-
     indexed = defaultdict(lambda:defaultdict(int))
     
     for doc_id, words in repo.items():
@@ -94,94 +69,12 @@ def create_index(repo):
 
     return indexed
 
-# ------------------------ Salvamento dos jsons -------------------------------
-def save_corpus(corpus, filename="../storage/Corpus_Reuters"):
-    '''Grava um corpus.
 
-    O corpus será gravado como um arquivo JSON.
-
-    Args:
-        corpus: dicionario que mapeia um docid para uma string contendo o
-        documento completo.
-    '''
+def save(data, filename):
     with open(f"{filename}.json", 'w') as file:
-        json.dump(corpus, file, indent=4)
-        
+        json.dump(data, file, indent=4)
 
-def save_repo(repo, filename="../storage/Repo_Reuters"):
-    '''Grava um repositório.
-
-    O repositório será gravado como um arquivo JSON.
-
-    Args:
-        repo: dicionario que mapeia docid para uma lista de tokens.
-        filename: nome do arquivo.
-    '''
-    with open(f"{filename}.json", 'w') as file_repo:
-        json.dump(repo, file_repo, indent=4)
-
-
-def save_index(index, filename="../storage/Index_Reuters"):
-    '''Grava um indice reverso.
-
-    O indice será gravado como um arquivo JSON.
-
-    Args:
-        index: dicionario que mapeia palavra para um dicionario que mapeia 
-        docids para a contagem dessa palavra no documento.
-        filename: nome do arquivo.
-    '''
-    with open(f"{filename}.json", 'w') as file_index:
-        json.dump(index, file_index, indent=4)
-        
-# ----------------------- Carregamento dos jsons ------------------------------
-def load_corpus(filename="../storage/Corpus_Reuters"):
-    '''Carrega o corpus.
-
-    O corpus deve estar armazenado em formato JSON. Deve ser um dicionário
-    mapeando uma string representando o docid de um documento para outra string
-    contendo o texto do documento.
-
-    Args:
-        filename: nome do arquivo do corpus.
-
-    Returns:
-        Um dicionário que mapeia docid (str) para um documento (str).
-    '''
-    with open(f"{filename}.json", 'r') as file_corpus:
-        return json.load(file_corpus)
+def load(filename):
+    with open(f"{filename}.json", 'r') as file:
+        return json.load(file)
     
-    
-def load_repo(filename="../storage/Repo_Reuters"):
-    '''Carrega o repo.
-
-    O repo deve estar armazenado em formato JSON. Deve ser um dicionário
-    mapeando uma string representando o docid de um documento para outra string
-    contendo o texto do documento tokenizado.
-
-    Args:
-        filename: nome do arquivo do repo.
-
-    Returns:
-        Um dicionário que mapeia docid (str) para um documento tokenizado (str).
-    '''
-    with open(f"{filename}.json", 'r') as file_repo:
-        return json.load(file_repo)
-    
-    
-def load_index(filename="../storage/Index_Reuters"):
-    '''Carrega o indice.
-
-    O indice deve estar armazenado em formato JSON. Deve ser um dicionário
-    mapeando uma palvra para outro dicionario contendo os DocIds dos documentos
-    apeados para o numero de ocorrencias daquela palavra
-
-    Args:
-        filename: nome do arquivo do indice.
-
-    Returns:
-        Um dicionário que mapeia docid (str) para um dicionario com a contagem 
-        de repetições dessa plavra no documeto.
-    '''
-    with open(f"{filename}.json", 'r') as file_index:
-        return json.load(file_index)

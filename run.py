@@ -1,51 +1,51 @@
-import search_engine
+from argparse import ArgumentParser
+import search_engine as se
 
-# --------------------------- Inputs do usuario -------------------------------
-TEST_MODE = True
-DO_SETUP = True
-# Inputs vinculados ao Setup
-target_corpus = "reuters"
-corpus_file = "./storage/corpus_reuters"
-repo_file = "./storage/repo_reuters"
-index_file = "./storage/index_reuters"
-# Inputs vinculados a query
-query = "(asian US) (export banana)"
-
-# ---------------------------- Setup do Repo ----------------------------------
-if DO_SETUP:
-    # Cria o corpus
-    corpus = search_engine.repository.create_corpus(target_corpus)
-    search_engine.repository.save_corpus(corpus, corpus_file)
+def main():
+    parser = ArgumentParser()
+    parser.add_argument('target_corpus', 
+                        help='Arquivo json com um dicionario docid para texto'
+                        ,type= str, default= "reuters", nargs='?')
     
-    if TEST_MODE:
-        corpus = {k: corpus[k] for k in list(corpus)[:10]}
-        search_engine.repository.save_corpus(corpus, f"{corpus_file}_mini")
+    parser.add_argument('query', 
+                        help='Arquivo json com um dicionario docid para texto',
+                        type= str, default= "(asian US) (export banana)", nargs='?')
+    
+    parser.add_argument('DO_SETUP', 
+                        help='Arquivo json com um dicionario docid para texto',
+                        type= bool, default= True, nargs='?')
+
+    parser.add_argument('TEST_MODE', 
+                        help='Arquivo json com um dicionario docid para texto',
+                        type= bool, default= True, nargs='?')
+
+    args = parser.parse_args()
+    print(args)
+
+    corpus_file = (f"./storage/corpus_{args.target_corpus}_mini" if(args.TEST_MODE) else f"./storage/corpus_{args.target_corpus}")
+    repo_file   = f"./storage/repo_{args.target_corpus}"
+    index_file  = f"./storage/index_{args.target_corpus}"
+    
+    # ---------------------------- Setup do Repo ----------------------------------
+    if args.DO_SETUP:
+        # Cria o corpus
+        se.gera_corpus.run(args.target_corpus)
         
-    # Cria o repo
-    repo = search_engine.repository.create_repo(corpus)
-    search_engine.repository.save_repo(repo, repo_file)
-    
-    # Cria o indice
-    index = search_engine.repository.create_index(repo)
-    search_engine.repository.save_index(index, index_file)
-    
-else:
-    # Lê o corpus
-    corpus = search_engine.repository.load_corpus(corpus_file)
-    
-    if TEST_MODE:
-        corpus = {k: corpus[k] for k in list(corpus)[:10]}
+        # Cria o repo e indice
+        se.indexador.run(args.target_corpus, corpus_file)
         
     # Lê o repo
-    repo = search_engine.repository.load_repo(repo_file)
+    repo = se.repository.load(repo_file)
     
     # Lê o indice
-    index = search_engine.repository.load_index(index_file)
+    index = se.repository.load(index_file)
     
-# -------------------------------- Querys -------------------------------------
-naive_results = list(search_engine.search.naive_search(index, repo, query))
-    
-and_or_results = list(search_engine.search.and_or_search(index, repo, query))
+    # -------------------------------- Querys -------------------------------------
+    naive_results = list(se.search.naive_search(index, repo, args.query))
+    and_or_results = list(se.search.and_or_search(index, repo, args.query))
 
-print({"naive_results":naive_results,
-       "and_or_results":and_or_results})
+    print({"naive_results":naive_results,
+        "and_or_results":and_or_results})
+
+if __name__ == '__main__':
+    main()

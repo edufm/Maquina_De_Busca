@@ -24,12 +24,20 @@ def create_repo(corpus, do_stopwords=True, do_normalize=True):
     # Verifica se o pacote de stopwords ja esta baixado
     
     if do_stopwords:
-        nltk.download('stopwords')
-        eng_stopwords = stopwords.words("english")
+        if not preset:
+            freq_dist = nltk.FreqDist(corpus.words())
+            thresh    = sum(freq_dist.values())         
+            eng_stopwords  = list(set(word for word in freq_dist.keys() if (freq_dist[word]/thresh > 0.05 and len(word) > 2)))  
+
+        else:
+            nltk.download('stopwords')
+            eng_stopwords = stopwords.words("english")
+    
     if do_normalize:
         stemmer = PorterStemmer()
     
     repo = {}
+    
     for docid, text in corpus.items():
         # Remove caracteres especiais (tudo que não é letra ou digito)
         text = re.sub(r"[^a-zA-Z0-9 ]", "", text, flags=re.DOTALL|re.MULTILINE)
@@ -44,6 +52,8 @@ def create_repo(corpus, do_stopwords=True, do_normalize=True):
         # Normalize
         if do_normalize:
             text_tokens = [stemmer.stem(word) for word in text_tokens]
+
+        # Substantivo
 
         repo[docid] = text_tokens
 

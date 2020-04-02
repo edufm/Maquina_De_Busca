@@ -9,11 +9,11 @@ def main():
     
     parser.add_argument('query', 
                         help='Arquivo json com um dicionario docid para texto',
-                        type= str, default= "(asian US) (export banana)", nargs='?')
+                        type= str, default= "(asian (US rise)) (export banana)", nargs='?')
     
     parser.add_argument('DO_SETUP', 
                         help='Arquivo json com um dicionario docid para texto',
-                        type= bool, default= True, nargs='?')
+                        type= bool, default= False, nargs='?')
 
     parser.add_argument('TEST_MODE', 
                         help='Arquivo json com um dicionario docid para texto',
@@ -40,12 +40,19 @@ def main():
     # Lê o indice
     index = se.repository.load(index_file)
     
+    
     # -------------------------------- Querys -------------------------------------
-    naive_results = list(se.search.naive_search(index, repo, args.query))
+    naive_results = list(se.search.naive_search(index, args.query))
     and_or_results = list(se.search.and_or_search(index, repo, args.query))
+    busca_results = list(se.search.busca_docids(index, args.query))
+
+    rank = se.search.rank(and_or_results, index, repo)
+    print(f"rank:{rank}")
+
 
     print({"naive_results":naive_results,
-        "and_or_results":and_or_results})
+        "and_or_results":and_or_results,
+        "busca_results" :busca_results})
 
 if __name__ == '__main__':
     main()

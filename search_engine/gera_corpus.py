@@ -13,6 +13,7 @@ def run(target="reuters"):
     '''
 
     corpus = {"reuters": reuters}
+    
     if(not corpus[target]) :
         raise Exception(f"Corpus {target} not implemented yet")
     

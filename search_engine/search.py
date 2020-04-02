@@ -1,8 +1,11 @@
 '''Funções para realzação dos diferentes tipos de busca
 '''
 import re
+from search_engine import corretor
+from nltk.tokenize import sexpr_tokenize
 
-def naive_search(index, repo, query):
+
+def naive_search(index, query):
     '''Executa uma query que exige o texto conter todas as palavras.
 
     Args:
@@ -18,6 +21,8 @@ def naive_search(index, repo, query):
     query = re.sub(r"[^a-zA-Z0-9 ]", "", query, flags=re.DOTALL|re.MULTILINE)
     split_query = query.split(" ")
 
+    split_query = [corretor.run(word, list(index.keys())) for word in split_query]    
+    print(split_query)
     # Recuperar os ids de documento que contem todos os termos da query.
     available_words = index.keys()
     score = []
@@ -99,3 +104,34 @@ def and_or_search(index, repo, query):
     results = set.intersection(*score)
         
     return results
+
+
+def busca_docids(index, query):
+    result = [q.strip().strip('()') for q in sexpr_tokenize(query)]
+    docids = set()
+    for subquery in result:
+        res = naive_search(index, subquery)
+        docids |= res
+
+    return docids
+
+
+def rank(docids, index, repo):
+    import math
+
+    rank = {}
+
+    for docid in docids:
+        points = 0
+        
+        for word in repo[docid]:
+            freq = index[word][docid]
+            ni = len(index[word].keys())
+            n = len(repo.keys())
+
+            points += (1+math.log2(freq))*math.log2(n/ni)
+
+        rank[docid] = points/len(repo[docid])
+        
+    return [k for k, v in sorted(rank.items(), key=lambda item: item[1])]
+    

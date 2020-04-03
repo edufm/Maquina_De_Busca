@@ -2,20 +2,23 @@
     "asian": {
         "test/14826": 2
     },
-    "export": {
-        "test/14826": 11,
-        "test/14832": 3,
-        "test/14833": 3
+    "exporters": {
+        "test/14826": 3
     },
     "fear": {
-        "test/14826": 2
+        "test/14826": 1
     },
-    "damag": {
+    "damage": {
         "test/14826": 2
     },
     "from": {
-        "test/14826": 1,
-        "test/14843": 1
+        "test/14826": 3,
+        "test/14829": 1,
+        "test/14832": 4,
+        "test/14833": 1,
+        "test/14841": 1,
+        "test/14842": 1,
+        "test/14843": 4
     },
     "usjapan": {
         "test/14826": 1
@@ -23,49 +26,95 @@
     "rift": {
         "test/14826": 1
     },
-    "mount": {
+    "mounting": {
         "test/14826": 1
     },
     "trade": {
-        "test/14826": 16,
+        "test/14826": 15,
         "test/14829": 1,
         "test/14832": 2,
-        "test/14839": 1,
-        "test/14840": 14
+        "test/14840": 3
     },
     "friction": {
         "test/14826": 1
     },
-    "US": {
-        "test/14826": 17,
+    "between": {
+        "test/14826": 4,
+        "test/14828": 1,
+        "test/14833": 1,
+        "test/14840": 1,
+        "test/14843": 1
+    },
+    "us": {
+        "test/14826": 18,
+        "test/14840": 1,
         "test/14841": 2,
         "test/14843": 4
     },
     "and": {
-        "test/14826": 4
+        "test/14826": 16,
+        "test/14828": 6,
+        "test/14829": 5,
+        "test/14832": 3,
+        "test/14833": 3,
+        "test/14839": 5,
+        "test/14840": 13,
+        "test/14841": 1,
+        "test/14842": 2,
+        "test/14843": 11
     },
     "japan": {
-        "test/14826": 12,
-        "test/14829": 2,
-        "test/14843": 2
+        "test/14826": 9,
+        "test/14829": 1
     },
-    "rais": {
+    "has": {
+        "test/14826": 3,
+        "test/14833": 1,
+        "test/14839": 2,
+        "test/14840": 2,
+        "test/14843": 3
+    },
+    "raised": {
+        "test/14826": 1
+    },
+    "fears": {
         "test/14826": 1
     },
     "among": {
         "test/14826": 2,
         "test/14843": 1
     },
-    "mani": {
+    "many": {
         "test/14826": 1,
         "test/14832": 1
     },
-    "asia": {
+    "of": {
+        "test/14826": 30,
+        "test/14828": 5,
+        "test/14829": 8,
+        "test/14832": 2,
+        "test/14833": 5,
+        "test/14839": 7,
+        "test/14840": 6,
+        "test/14841": 3,
+        "test/14842": 4,
+        "test/14843": 13
+    },
+    "asias": {
         "test/14826": 1
     },
-    "nation": {
-        "test/14826": 1,
-        "test/14828": 1
+    "exporting": {
+        "test/14826": 1
+    },
+    "nations": {
+        "test/14826": 1
+    },
+    "that": {
+        "test/14826": 5,
+        "test/14828": 1,
+        "test/14833": 1,
+        "test/14840": 4,
+        "test/14843": 2
     },
     "row": {
         "test/14826": 1
@@ -78,20 +127,19 @@
     "inflict": {
         "test/14826": 1
     },
-    "farreach": {
+    "farreaching": {
         "test/14826": 1
     },
-    "econom": {
-        "test/14826": 2,
-        "test/14832": 1
+    "economic": {
+        "test/14826": 2
     },
     "businessmen": {
         "test/14826": 4
     },
-    "offici": {
-        "test/14826": 4,
+    "officials": {
+        "test/14826": 2,
         "test/14829": 2,
-        "test/14840": 3,
+        "test/14840": 2,
         "test/14841": 1
     },
     "said": {
@@ -107,10 +155,11 @@
         "test/14843": 15
     },
     "they": {
-        "test/14826": 2,
-        "test/14829": 1,
-        "test/14839": 1,
-        "test/14841": 1
+        "test/14826": 3,
+        "test/14829": 3,
+        "test/14839": 5,
+        "test/14841": 1,
+        "test/14843": 2
     },
     "told": {
         "test/14826": 1,
@@ -119,20 +168,45 @@
         "test/14843": 1
     },
     "reuter": {
-        "test/14826": 1,
-        "test/14840": 1,
-        "test/14843": 1
-    },
-    "correspond": {
         "test/14826": 1
     },
-    "capit": {
+    "correspondents": {
         "test/14826": 1
+    },
+    "in": {
+        "test/14826": 16,
+        "test/14828": 1,
+        "test/14829": 6,
+        "test/14832": 5,
+        "test/14833": 4,
+        "test/14839": 5,
+        "test/14840": 13,
+        "test/14842": 4,
+        "test/14843": 18
+    },
+    "capitals": {
+        "test/14826": 1
+    },
+    "a": {
+        "test/14826": 15,
+        "test/14828": 2,
+        "test/14829": 4,
+        "test/14832": 2,
+        "test/14833": 4,
+        "test/14839": 5,
+        "test/14840": 6,
+        "test/14841": 1,
+        "test/14842": 5,
+        "test/14843": 13
     },
     "move": {
         "test/14826": 1,
         "test/14840": 2,
-        "test/14843": 4
+        "test/14843": 2
+    },
+    "against": {
+        "test/14826": 3,
+        "test/14833": 1
     },
     "might": {
         "test/14826": 4
@@ -148,32 +222,64 @@
         "test/14826": 1
     },
     "lead": {
-        "test/14826": 3
-    },
-    "curb": {
         "test/14826": 2
+    },
+    "to": {
+        "test/14826": 26,
+        "test/14828": 3,
+        "test/14829": 5,
+        "test/14832": 5,
+        "test/14833": 8,
+        "test/14839": 6,
+        "test/14840": 10,
+        "test/14841": 2,
+        "test/14842": 3,
+        "test/14843": 17
+    },
+    "curbs": {
+        "test/14826": 2
+    },
+    "on": {
+        "test/14826": 6,
+        "test/14828": 1,
+        "test/14829": 1,
+        "test/14839": 3,
+        "test/14840": 4,
+        "test/14843": 5
     },
     "american": {
         "test/14826": 1,
         "test/14840": 1,
         "test/14843": 1
     },
-    "import": {
-        "test/14826": 6,
-        "test/14832": 3,
-        "test/14833": 2
+    "imports": {
+        "test/14826": 5,
+        "test/14832": 2
     },
-    "product": {
+    "their": {
         "test/14826": 3,
-        "test/14828": 1,
-        "test/14832": 2,
-        "test/14842": 1
+        "test/14839": 1,
+        "test/14843": 1
+    },
+    "products": {
+        "test/14826": 3,
+        "test/14832": 2
     },
     "but": {
         "test/14826": 2,
-        "test/14839": 1,
+        "test/14839": 3,
+        "test/14840": 2,
+        "test/14843": 7
+    },
+    "some": {
+        "test/14826": 2,
         "test/14840": 1,
-        "test/14843": 5
+        "test/14843": 4
+    },
+    "while": {
+        "test/14826": 1,
+        "test/14840": 1,
+        "test/14843": 1
     },
     "conflict": {
         "test/14826": 1
@@ -186,18 +292,28 @@
     "hurt": {
         "test/14826": 1
     },
+    "them": {
+        "test/14826": 1,
+        "test/14843": 1
+    },
     "longrun": {
         "test/14826": 1
     },
     "shortterm": {
         "test/14826": 3
     },
-    "tokyo": {
-        "test/14826": 2,
-        "test/14843": 1
+    "tokyos": {
+        "test/14826": 1
     },
     "loss": {
         "test/14826": 1
+    },
+    "be": {
+        "test/14826": 5,
+        "test/14839": 1,
+        "test/14840": 1,
+        "test/14842": 3,
+        "test/14843": 5
     },
     "gain": {
         "test/14826": 1
@@ -212,12 +328,24 @@
         "test/14842": 1,
         "test/14843": 4
     },
-    "ha": {
-        "test/14826": 1
+    "it": {
+        "test/14826": 5,
+        "test/14828": 2,
+        "test/14832": 1,
+        "test/14833": 2,
+        "test/14839": 2,
+        "test/14842": 3,
+        "test/14843": 5
     },
-    "impos": {
-        "test/14826": 1,
-        "test/14839": 1
+    "will": {
+        "test/14826": 3,
+        "test/14829": 2,
+        "test/14839": 2,
+        "test/14842": 3,
+        "test/14843": 11
+    },
+    "impose": {
+        "test/14826": 1
     },
     "300": {
         "test/14826": 1
@@ -230,7 +358,7 @@
         "test/14842": 1,
         "test/14843": 1
     },
-    "dlr": {
+    "dlrs": {
         "test/14826": 6,
         "test/14833": 2,
         "test/14840": 1,
@@ -238,19 +366,18 @@
         "test/14842": 1,
         "test/14843": 2
     },
-    "tariff": {
+    "tariffs": {
         "test/14826": 5
     },
-    "japanes": {
+    "japanese": {
         "test/14826": 4,
         "test/14829": 2
     },
-    "electron": {
+    "electronics": {
         "test/14826": 4
     },
-    "good": {
-        "test/14826": 2,
-        "test/14840": 1
+    "goods": {
+        "test/14826": 2
     },
     "april": {
         "test/14826": 1,
@@ -260,13 +387,28 @@
     "17": {
         "test/14826": 1
     },
-    "retali": {
+    "retaliation": {
         "test/14826": 2
     },
-    "alleg": {
+    "for": {
+        "test/14826": 7,
+        "test/14828": 1,
+        "test/14829": 1,
+        "test/14833": 2,
+        "test/14839": 1,
+        "test/14840": 3,
+        "test/14841": 2,
+        "test/14843": 6
+    },
+    "japans": {
+        "test/14826": 3,
+        "test/14829": 1,
+        "test/14843": 2
+    },
+    "alleged": {
         "test/14826": 2
     },
-    "failur": {
+    "failure": {
         "test/14826": 1
     },
     "stick": {
@@ -275,34 +417,46 @@
     "pact": {
         "test/14826": 1
     },
-    "sell": {
-        "test/14826": 2
+    "not": {
+        "test/14826": 2,
+        "test/14839": 2,
+        "test/14840": 1,
+        "test/14843": 1
     },
-    "semiconductor": {
+    "sell": {
+        "test/14826": 1
+    },
+    "semiconductors": {
         "test/14826": 3
     },
     "world": {
-        "test/14826": 2,
-        "test/14833": 1,
-        "test/14840": 1
+        "test/14826": 1
     },
-    "market": {
+    "markets": {
+        "test/14826": 2,
+        "test/14833": 1
+    },
+    "at": {
         "test/14826": 3,
-        "test/14833": 2,
-        "test/14840": 1
+        "test/14839": 2,
+        "test/14840": 2,
+        "test/14841": 1,
+        "test/14842": 2,
+        "test/14843": 3
+    },
+    "below": {
+        "test/14826": 1
     },
     "cost": {
         "test/14826": 1,
         "test/14842": 1,
         "test/14843": 1
     },
-    "unoffici": {
+    "unofficial": {
         "test/14826": 1
     },
-    "estim": {
-        "test/14826": 1,
-        "test/14829": 1,
-        "test/14843": 1
+    "estimates": {
+        "test/14826": 1
     },
     "put": {
         "test/14826": 1,
@@ -326,18 +480,31 @@
     "major": {
         "test/14826": 2
     },
-    "firm": {
-        "test/14826": 2
+    "firms": {
+        "test/14826": 1
     },
-    "virtual": {
+    "virtually": {
         "test/14826": 1
     },
     "halt": {
         "test/14826": 1
     },
+    "exports": {
+        "test/14826": 6,
+        "test/14832": 1,
+        "test/14833": 2
+    },
     "hit": {
         "test/14826": 1,
         "test/14839": 1
+    },
+    "by": {
+        "test/14826": 2,
+        "test/14829": 2,
+        "test/14839": 2,
+        "test/14840": 2,
+        "test/14842": 2,
+        "test/14843": 1
     },
     "new": {
         "test/14826": 1,
@@ -346,41 +513,51 @@
         "test/14842": 2,
         "test/14843": 2
     },
-    "tax": {
+    "taxes": {
         "test/14826": 1
     },
-    "We": {
-        "test/14826": 3,
-        "test/14840": 1,
-        "test/14843": 4
+    "we": {
+        "test/14826": 4,
+        "test/14840": 2,
+        "test/14843": 7
     },
     "wouldnt": {
         "test/14826": 1
     },
-    "abl": {
+    "able": {
         "test/14826": 1
     },
-    "busi": {
+    "do": {
+        "test/14826": 1,
+        "test/14840": 1,
+        "test/14843": 2
+    },
+    "business": {
         "test/14826": 1,
         "test/14832": 2,
-        "test/14843": 9
+        "test/14843": 8
     },
     "spokesman": {
+        "test/14826": 1
+    },
+    "leading": {
+        "test/14826": 1
+    },
+    "firm": {
         "test/14826": 1
     },
     "matsushita": {
         "test/14826": 1
     },
-    "electr": {
+    "electric": {
         "test/14826": 1,
         "test/14829": 2
     },
-    "industri": {
-        "test/14826": 4,
-        "test/14829": 2,
+    "industrial": {
+        "test/14826": 1,
         "test/14839": 1
     },
-    "Co": {
+    "co": {
         "test/14826": 2,
         "test/14841": 1,
         "test/14842": 1,
@@ -394,15 +571,19 @@
     "ltmct": {
         "test/14826": 1
     },
-    "If": {
-        "test/14826": 2
+    "if": {
+        "test/14826": 3,
+        "test/14843": 2
     },
     "remain": {
         "test/14826": 1
     },
     "place": {
         "test/14826": 1,
-        "test/14843": 3
+        "test/14843": 2
+    },
+    "any": {
+        "test/14826": 1
     },
     "length": {
         "test/14826": 1
@@ -415,18 +596,20 @@
     "beyond": {
         "test/14826": 1
     },
-    "month": {
+    "few": {
+        "test/14826": 1
+    },
+    "months": {
         "test/14826": 1,
-        "test/14833": 1,
         "test/14840": 2
     },
     "mean": {
         "test/14826": 1
     },
-    "complet": {
+    "complete": {
         "test/14826": 1
     },
-    "eros": {
+    "erosion": {
         "test/14826": 1
     },
     "subject": {
@@ -439,33 +622,39 @@
         "test/14826": 1
     },
     "stock": {
-        "test/14826": 1,
-        "test/14828": 2
+        "test/14826": 1
     },
     "analyst": {
         "test/14826": 1,
-        "test/14843": 6
+        "test/14843": 2
     },
-    "offic": {
-        "test/14826": 2
+    "tokyo": {
+        "test/14826": 1,
+        "test/14843": 1
+    },
+    "office": {
+        "test/14826": 1
     },
     "broker": {
-        "test/14826": 1,
-        "test/14840": 1
+        "test/14826": 1
     },
-    "ltjame": {
+    "ltjames": {
         "test/14826": 1
     },
     "capel": {
         "test/14826": 1
     },
-    "In": {
-        "test/14826": 3,
-        "test/14843": 1
-    },
     "taiwan": {
-        "test/14826": 3,
+        "test/14826": 2,
         "test/14840": 1
+    },
+    "are": {
+        "test/14826": 5,
+        "test/14828": 1,
+        "test/14833": 1,
+        "test/14839": 1,
+        "test/14840": 4,
+        "test/14843": 3
     },
     "also": {
         "test/14826": 4,
@@ -474,41 +663,61 @@
         "test/14840": 2,
         "test/14843": 2
     },
-    "worri": {
+    "worried": {
         "test/14826": 1
     },
-    "awar": {
+    "aware": {
         "test/14826": 1
     },
-    "serious": {
+    "seriousness": {
         "test/14826": 1
     },
     "threat": {
         "test/14826": 1
     },
-    "serv": {
-        "test/14826": 1
-    },
-    "warn": {
-        "test/14826": 1
-    },
-    "us": {
+    "because": {
         "test/14826": 1,
-        "test/14840": 1
+        "test/14833": 1,
+        "test/14843": 1
+    },
+    "serves": {
+        "test/14826": 1
+    },
+    "as": {
+        "test/14826": 2,
+        "test/14840": 1,
+        "test/14842": 1,
+        "test/14843": 4
+    },
+    "warning": {
+        "test/14826": 1
     },
     "senior": {
         "test/14826": 2
     },
-    "taiwanes": {
+    "taiwanese": {
         "test/14826": 1
     },
-    "ask": {
+    "official": {
+        "test/14826": 2,
+        "test/14840": 1
+    },
+    "who": {
         "test/14826": 1
     },
-    "name": {
+    "asked": {
         "test/14826": 1
     },
-    "surplu": {
+    "named": {
+        "test/14826": 1
+    },
+    "had": {
+        "test/14826": 2,
+        "test/14828": 1,
+        "test/14839": 1,
+        "test/14840": 2
+    },
+    "surplus": {
         "test/14826": 3
     },
     "156": {
@@ -524,8 +733,7 @@
         "test/14829": 2,
         "test/14832": 2,
         "test/14833": 1,
-        "test/14842": 1,
-        "test/14843": 3
+        "test/14842": 1
     },
     "95": {
         "test/14826": 1
@@ -538,28 +746,41 @@
         "test/14842": 2,
         "test/14843": 3
     },
-    "help": {
-        "test/14826": 1,
-        "test/14840": 1
+    "with": {
+        "test/14826": 3,
+        "test/14839": 1,
+        "test/14840": 2,
+        "test/14842": 1,
+        "test/14843": 7
+    },
+    "helped": {
+        "test/14826": 1
     },
     "swell": {
+        "test/14826": 1
+    },
+    "taiwans": {
         "test/14826": 1
     },
     "foreign": {
         "test/14826": 1,
         "test/14839": 1
     },
-    "exchang": {
+    "exchange": {
         "test/14826": 1,
         "test/14840": 13,
         "test/14843": 2
     },
-    "reserv": {
-        "test/14826": 1,
-        "test/14843": 1
+    "reserves": {
+        "test/14826": 1
     },
     "53": {
         "test/14826": 1
+    },
+    "worlds": {
+        "test/14826": 1,
+        "test/14833": 1,
+        "test/14840": 1
     },
     "largest": {
         "test/14826": 2,
@@ -569,7 +790,7 @@
     "must": {
         "test/14826": 1
     },
-    "quickli": {
+    "quickly": {
         "test/14826": 1,
         "test/14843": 2
     },
@@ -578,35 +799,40 @@
         "test/14840": 1,
         "test/14842": 1
     },
-    "remov": {
+    "our": {
         "test/14826": 1
     },
-    "barrier": {
+    "remove": {
+        "test/14826": 1
+    },
+    "barriers": {
         "test/14826": 1
     },
     "cut": {
         "test/14826": 1
     },
+    "import": {
+        "test/14826": 1,
+        "test/14832": 1,
+        "test/14833": 2
+    },
     "allow": {
-        "test/14826": 2,
-        "test/14843": 1
+        "test/14826": 2
     },
     "want": {
         "test/14826": 1,
         "test/14840": 1,
         "test/14843": 2
     },
-    "defus": {
+    "defuse": {
         "test/14826": 1
     },
-    "problem": {
+    "problems": {
         "test/14826": 1,
         "test/14843": 1
     },
-    "possibl": {
+    "possible": {
         "test/14826": 1,
-        "test/14833": 1,
-        "test/14840": 1,
         "test/14843": 1
     },
     "paul": {
@@ -619,44 +845,42 @@
         "test/14826": 1,
         "test/14840": 1
     },
-    "textil": {
+    "textile": {
         "test/14826": 1
     },
     "lttaiwan": {
         "test/14826": 1
     },
     "safe": {
-        "test/14826": 1,
-        "test/14840": 1
+        "test/14826": 1
     },
     "group": {
         "test/14826": 1
-    },
-    "A": {
-        "test/14826": 1,
-        "test/14828": 1
     },
     "south": {
         "test/14826": 3,
         "test/14839": 1,
         "test/14840": 1
     },
-    "korea": {
-        "test/14826": 3,
-        "test/14840": 1
-    },
-    "promot": {
+    "koreas": {
         "test/14826": 1
     },
-    "associ": {
+    "promotion": {
         "test/14826": 1
     },
-    "disput": {
+    "association": {
+        "test/14826": 1
+    },
+    "dispute": {
         "test/14826": 2,
         "test/14839": 2
     },
-    "pressur": {
+    "pressure": {
         "test/14826": 2
+    },
+    "korea": {
+        "test/14826": 2,
+        "test/14840": 1
     },
     "whose": {
         "test/14826": 1,
@@ -669,11 +893,19 @@
         "test/14826": 1,
         "test/14843": 2
     },
+    "those": {
+        "test/14826": 1,
+        "test/14843": 1
+    },
     "71": {
         "test/14826": 1
     },
-    "Up": {
-        "test/14826": 1
+    "up": {
+        "test/14826": 1,
+        "test/14828": 1,
+        "test/14832": 1,
+        "test/14840": 3,
+        "test/14843": 1
     },
     "49": {
         "test/14826": 1
@@ -687,48 +919,64 @@
         "test/14826": 1,
         "test/14833": 2
     },
+    "officers": {
+        "test/14826": 1
+    },
     "tough": {
         "test/14826": 1
     },
     "hardhit": {
         "test/14826": 1
     },
-    "produc": {
-        "test/14826": 2,
-        "test/14833": 1,
-        "test/14840": 1,
-        "test/14842": 1
+    "producers": {
+        "test/14826": 1
     },
     "third": {
         "test/14826": 1
     },
-    "countri": {
-        "test/14826": 3,
-        "test/14832": 1
+    "countries": {
+        "test/14826": 2
     },
     "expand": {
         "test/14826": 1,
-        "test/14832": 1,
         "test/14840": 2,
-        "test/14843": 3
+        "test/14843": 2
     },
-    "sale": {
-        "test/14826": 1,
-        "test/14841": 1
+    "sales": {
+        "test/14826": 1
     },
     "hong": {
         "test/14826": 4
     },
     "kong": {
-        "test/14826": 4
+        "test/14826": 3
     },
-    "newspap": {
+    "where": {
+        "test/14826": 1,
+        "test/14843": 1
+    },
+    "newspapers": {
+        "test/14826": 1
+    },
+    "have": {
+        "test/14826": 1,
+        "test/14839": 1,
+        "test/14843": 3
+    },
+    "been": {
+        "test/14826": 1,
+        "test/14833": 1,
+        "test/14839": 1,
+        "test/14840": 3,
+        "test/14843": 2
+    },
+    "selling": {
         "test/14826": 1
     },
     "belowcost": {
         "test/14826": 1
     },
-    "manufactur": {
+    "manufacturers": {
         "test/14826": 1
     },
     "share": {
@@ -740,45 +988,67 @@
         "test/14826": 2,
         "test/14843": 1
     },
-    "commerci": {
+    "other": {
+        "test/14826": 2,
+        "test/14843": 2
+    },
+    "such": {
         "test/14826": 1,
         "test/14843": 2
     },
-    "advantag": {
+    "commercial": {
+        "test/14826": 1,
+        "test/14843": 2
+    },
+    "advantage": {
         "test/14826": 1
     },
-    "outweigh": {
+    "outweighed": {
         "test/14826": 1
+    },
+    "further": {
+        "test/14826": 1,
+        "test/14828": 1,
+        "test/14843": 1
     },
     "block": {
         "test/14826": 1
     },
-    "that": {
-        "test/14826": 1,
-        "test/14843": 1
+    "is": {
+        "test/14826": 5,
+        "test/14829": 2,
+        "test/14839": 1,
+        "test/14840": 2,
+        "test/14842": 2,
+        "test/14843": 9
     },
-    "lawrenc": {
+    "very": {
+        "test/14826": 2
+    },
+    "lawrence": {
         "test/14826": 1
     },
-    "mill": {
+    "mills": {
         "test/14826": 1
     },
-    "directorgener": {
+    "directorgeneral": {
         "test/14826": 1
     },
-    "feder": {
-        "test/14826": 1,
-        "test/14843": 1
+    "federation": {
+        "test/14826": 1
+    },
+    "industry": {
+        "test/14826": 3,
+        "test/14829": 2
     },
     "whole": {
         "test/14826": 1
     },
-    "purpos": {
+    "purpose": {
         "test/14826": 1
     },
     "prevent": {
-        "test/14826": 1,
-        "test/14839": 1
+        "test/14826": 1
     },
     "one": {
         "test/14826": 1,
@@ -786,13 +1056,12 @@
         "test/14843": 1
     },
     "day": {
-        "test/14826": 1,
-        "test/14840": 1
-    },
-    "extend": {
         "test/14826": 1
     },
-    "sourc": {
+    "extended": {
+        "test/14826": 1
+    },
+    "sources": {
         "test/14826": 1,
         "test/14829": 1,
         "test/14839": 2
@@ -801,51 +1070,85 @@
         "test/14826": 1,
         "test/14843": 1
     },
-    "seriou": {
+    "more": {
+        "test/14826": 1,
+        "test/14843": 1
+    },
+    "serious": {
         "test/14826": 2
     },
-    "disadvantag": {
+    "disadvantage": {
         "test/14826": 1
     },
     "action": {
         "test/14826": 1,
         "test/14839": 2
     },
-    "restrain": {
+    "restraining": {
+        "test/14826": 1
+    },
+    "he": {
+        "test/14826": 2,
+        "test/14840": 4,
+        "test/14843": 6
+    },
+    "was": {
+        "test/14826": 1,
+        "test/14832": 1,
+        "test/14833": 1,
+        "test/14840": 5,
+        "test/14841": 1,
+        "test/14843": 3
+    },
+    "kongs": {
         "test/14826": 1
     },
     "biggest": {
         "test/14826": 1
     },
-    "account": {
+    "export": {
+        "test/14826": 1,
+        "test/14832": 2,
+        "test/14833": 1
+    },
+    "market": {
+        "test/14826": 1,
+        "test/14833": 1
+    },
+    "accounting": {
         "test/14826": 1
+    },
+    "over": {
+        "test/14826": 1,
+        "test/14839": 1
     },
     "30": {
         "test/14826": 1,
         "test/14828": 1,
         "test/14842": 1
     },
-    "domest": {
-        "test/14826": 1,
-        "test/14829": 1,
-        "test/14843": 2
+    "domestically": {
+        "test/14826": 1
+    },
+    "produced": {
+        "test/14826": 1
     },
     "australian": {
         "test/14826": 1,
         "test/14839": 1
     },
-    "govern": {
+    "government": {
         "test/14826": 1,
         "test/14828": 1,
         "test/14843": 1
     },
-    "await": {
+    "awaiting": {
         "test/14826": 1
     },
-    "outcom": {
+    "outcome": {
         "test/14826": 1
     },
-    "talk": {
+    "talks": {
         "test/14826": 1
     },
     "interest": {
@@ -853,9 +1156,9 @@
         "test/14840": 1
     },
     "concern": {
-        "test/14826": 2
+        "test/14826": 1
     },
-    "minist": {
+    "minister": {
         "test/14826": 3,
         "test/14833": 1,
         "test/14840": 2
@@ -872,42 +1175,53 @@
     "friday": {
         "test/14826": 1
     },
-    "thi": {
-        "test/14826": 1
+    "this": {
+        "test/14826": 2,
+        "test/14832": 1,
+        "test/14833": 1,
+        "test/14840": 1,
+        "test/14843": 1
     },
     "kind": {
         "test/14826": 1,
         "test/14843": 1
     },
-    "deterior": {
+    "deterioration": {
         "test/14826": 1
     },
-    "relat": {
+    "relations": {
         "test/14826": 1,
-        "test/14843": 3
+        "test/14843": 1
     },
     "two": {
         "test/14826": 2,
         "test/14840": 1,
         "test/14843": 3
     },
-    "partner": {
+    "which": {
+        "test/14826": 1,
+        "test/14843": 2
+    },
+    "trading": {
+        "test/14826": 1,
+        "test/14840": 8
+    },
+    "partners": {
+        "test/14826": 1
+    },
+    "ours": {
         "test/14826": 1
     },
     "matter": {
         "test/14826": 1
     },
-    "He": {
-        "test/14826": 1,
-        "test/14840": 2,
-        "test/14843": 2
+    "australias": {
+        "test/14826": 2
     },
-    "australia": {
-        "test/14826": 2,
-        "test/14839": 1,
-        "test/14842": 1
+    "concerns": {
+        "test/14826": 1
     },
-    "centr": {
+    "centred": {
         "test/14826": 1
     },
     "coal": {
@@ -917,73 +1231,73 @@
     "beef": {
         "test/14826": 1
     },
-    "signific": {
+    "significant": {
         "test/14826": 1
     },
-    "meanwhil": {
+    "country": {
+        "test/14826": 1
+    },
+    "meanwhile": {
         "test/14826": 1,
         "test/14839": 1
     },
-    "usjapanes": {
+    "usjapanese": {
         "test/14826": 1
     },
-    "diplomat": {
+    "diplomatic": {
         "test/14826": 1
     },
-    "manoeuvr": {
+    "manoeuvres": {
         "test/14826": 1
     },
-    "solv": {
+    "solve": {
         "test/14826": 1
     },
     "standoff": {
         "test/14826": 1
     },
-    "continu": {
+    "continue": {
         "test/14826": 1
     },
-    "rule": {
+    "ruling": {
         "test/14826": 1
     },
-    "liber": {
+    "liberal": {
         "test/14826": 1
     },
-    "democrat": {
+    "democratic": {
         "test/14826": 1
     },
-    "parti": {
+    "party": {
         "test/14826": 1
     },
     "yesterday": {
         "test/14826": 1,
         "test/14839": 1
     },
-    "outlin": {
+    "outlined": {
         "test/14826": 1
     },
-    "packag": {
+    "package": {
         "test/14826": 1
     },
-    "measur": {
-        "test/14826": 3
-    },
-    "economi": {
+    "measures": {
         "test/14826": 2
     },
-    "propos": {
+    "economy": {
+        "test/14826": 2
+    },
+    "proposed": {
         "test/14826": 1
     },
-    "includ": {
+    "include": {
+        "test/14826": 1
+    },
+    "large": {
         "test/14826": 1,
-        "test/14829": 1,
-        "test/14832": 1,
         "test/14843": 1
     },
-    "larg": {
-        "test/14826": 1,
-        "test/14843": 2
-    },
-    "supplementari": {
+    "supplementary": {
         "test/14826": 1
     },
     "budget": {
@@ -995,12 +1309,10 @@
     "public": {
         "test/14826": 1
     },
-    "work": {
-        "test/14826": 1,
-        "test/14829": 1,
-        "test/14839": 1
+    "works": {
+        "test/14826": 1
     },
-    "spend": {
+    "spending": {
         "test/14826": 2
     },
     "first": {
@@ -1013,26 +1325,32 @@
     "half": {
         "test/14826": 1
     },
-    "financi": {
+    "financial": {
         "test/14826": 1,
         "test/14843": 3
     },
     "call": {
-        "test/14826": 1,
-        "test/14828": 1,
-        "test/14839": 1
+        "test/14826": 1
     },
     "steppedup": {
         "test/14826": 1
     },
-    "emerg": {
-        "test/14826": 1,
-        "test/14829": 1
+    "an": {
+        "test/14826": 2,
+        "test/14829": 1,
+        "test/14840": 1,
+        "test/14843": 2
     },
-    "stimul": {
+    "emergency": {
         "test/14826": 1
     },
-    "despit": {
+    "measure": {
+        "test/14826": 1
+    },
+    "stimulate": {
+        "test/14826": 1
+    },
+    "despite": {
         "test/14826": 1,
         "test/14833": 1,
         "test/14843": 1
@@ -1043,10 +1361,10 @@
     "yasuhiro": {
         "test/14826": 1
     },
-    "nakason": {
+    "nakasones": {
         "test/14826": 1
     },
-    "avow": {
+    "avowed": {
         "test/14826": 1
     },
     "fiscal": {
@@ -1059,10 +1377,10 @@
     "program": {
         "test/14826": 1
     },
-    "deputi": {
+    "deputy": {
         "test/14826": 2
     },
-    "repres": {
+    "representative": {
         "test/14826": 1
     },
     "michael": {
@@ -1077,7 +1395,7 @@
     "kuroda": {
         "test/14826": 1
     },
-    "intern": {
+    "international": {
         "test/14826": 1,
         "test/14829": 1,
         "test/14833": 1
@@ -1092,7 +1410,7 @@
     },
     "meet": {
         "test/14826": 1,
-        "test/14829": 2
+        "test/14829": 1
     },
     "washington": {
         "test/14826": 1
@@ -1107,20 +1425,16 @@
         "test/14840": 1
     },
     "end": {
-        "test/14826": 1,
-        "test/14829": 1,
-        "test/14839": 1
+        "test/14826": 1
     },
     "china": {
-        "test/14828": 4
-    },
-    "daili": {
         "test/14828": 2
     },
-    "say": {
-        "test/14828": 1,
-        "test/14839": 1,
-        "test/14840": 1
+    "daily": {
+        "test/14828": 2
+    },
+    "says": {
+        "test/14828": 1
     },
     "vermin": {
         "test/14828": 2
@@ -1135,47 +1449,57 @@
         "test/14828": 2,
         "test/14841": 1
     },
+    "stocks": {
+        "test/14828": 2
+    },
     "survey": {
         "test/14828": 1
     },
     "19": {
         "test/14828": 1
     },
-    "provinc": {
+    "provinces": {
         "test/14828": 1
     },
     "seven": {
         "test/14828": 2,
         "test/14832": 1
     },
-    "citi": {
-        "test/14828": 1,
-        "test/14843": 1
-    },
-    "show": {
+    "cities": {
         "test/14828": 1
     },
-    "consum": {
+    "showed": {
+        "test/14828": 1
+    },
+    "consume": {
         "test/14828": 1
     },
     "12": {
         "test/14828": 1
     },
-    "It": {
-        "test/14828": 2,
-        "test/14832": 1,
-        "test/14842": 2,
-        "test/14843": 2
+    "chinas": {
+        "test/14828": 2
+    },
+    "each": {
+        "test/14828": 1,
+        "test/14839": 1,
+        "test/14843": 1
     },
     "1575": {
         "test/14828": 1
     },
-    "tonn": {
+    "tonnes": {
         "test/14828": 2,
-        "test/14833": 3,
+        "test/14833": 1,
         "test/14840": 2,
-        "test/14841": 2,
+        "test/14841": 1,
         "test/14842": 1
+    },
+    "or": {
+        "test/14828": 2,
+        "test/14839": 1,
+        "test/14840": 2,
+        "test/14843": 4
     },
     "25": {
         "test/14828": 1
@@ -1199,74 +1523,92 @@
         "test/14832": 1,
         "test/14842": 1
     },
-    "veget": {
+    "its": {
+        "test/14828": 1,
+        "test/14829": 1,
+        "test/14833": 2,
+        "test/14840": 1,
+        "test/14842": 1,
+        "test/14843": 10
+    },
+    "vegetables": {
         "test/14828": 1
     },
     "paper": {
         "test/14828": 2
     },
-    "blame": {
+    "blamed": {
         "test/14828": 1
     },
-    "wast": {
+    "waste": {
         "test/14828": 2
     },
-    "inadequ": {
+    "inadequate": {
         "test/14828": 1
     },
-    "storag": {
+    "storage": {
         "test/14828": 2
     },
     "bad": {
         "test/14828": 1
     },
-    "preserv": {
+    "preservation": {
         "test/14828": 2
     },
-    "method": {
+    "methods": {
         "test/14828": 1
     },
-    "launch": {
+    "launched": {
         "test/14828": 1,
         "test/14840": 1
     },
-    "programm": {
+    "national": {
         "test/14828": 1
     },
-    "reduc": {
+    "programme": {
+        "test/14828": 1
+    },
+    "reduce": {
         "test/14828": 1,
         "test/14843": 1
     },
-    "improv": {
+    "calling": {
+        "test/14828": 1
+    },
+    "improved": {
         "test/14828": 1,
         "test/14832": 1
     },
-    "technolog": {
+    "technology": {
         "test/14828": 1
     },
     "greater": {
         "test/14828": 1
     },
-    "addit": {
+    "production": {
+        "test/14828": 1,
+        "test/14842": 1
+    },
+    "additives": {
         "test/14828": 1
     },
     "gave": {
         "test/14828": 1
     },
-    "detail": {
+    "no": {
+        "test/14828": 1,
+        "test/14840": 2
+    },
+    "details": {
         "test/14828": 1
     },
-    "TO": {
-        "test/14829": 1,
-        "test/14842": 1
-    },
-    "revis": {
-        "test/14829": 3
+    "revise": {
+        "test/14829": 2
     },
     "longterm": {
         "test/14829": 2
     },
-    "energi": {
+    "energy": {
         "test/14829": 8
     },
     "demand": {
@@ -1274,10 +1616,10 @@
         "test/14833": 1,
         "test/14843": 1
     },
-    "downward": {
+    "downwards": {
         "test/14829": 1
     },
-    "ministri": {
+    "ministry": {
         "test/14829": 2,
         "test/14840": 1,
         "test/14843": 1
@@ -1298,26 +1640,24 @@
     "downtrend": {
         "test/14829": 1
     },
-    "expect": {
+    "expected": {
         "test/14829": 1,
         "test/14832": 1,
-        "test/14833": 1,
         "test/14842": 1,
-        "test/14843": 3
+        "test/14843": 2
     },
     "lower": {
         "test/14829": 1,
         "test/14832": 2
     },
-    "project": {
-        "test/14829": 1,
-        "test/14842": 1
-    },
-    "primari": {
+    "projection": {
         "test/14829": 1
     },
-    "suppli": {
-        "test/14829": 3,
+    "primary": {
+        "test/14829": 1
+    },
+    "supplies": {
+        "test/14829": 1,
         "test/14833": 1
     },
     "2000": {
@@ -1327,7 +1667,7 @@
         "test/14829": 1,
         "test/14833": 1
     },
-    "kilolitr": {
+    "kilolitres": {
         "test/14829": 1
     },
     "kl": {
@@ -1336,59 +1676,86 @@
     "600": {
         "test/14829": 1
     },
-    "decis": {
+    "decision": {
         "test/14829": 1,
-        "test/14840": 2,
+        "test/14840": 1,
         "test/14843": 2
     },
-    "follow": {
-        "test/14829": 3,
-        "test/14843": 1
-    },
-    "structur": {
+    "follows": {
         "test/14829": 1
     },
-    "chang": {
+    "emergence": {
+        "test/14829": 1
+    },
+    "structural": {
+        "test/14829": 1
+    },
+    "changes": {
         "test/14829": 1,
         "test/14839": 1,
-        "test/14843": 2
+        "test/14843": 1
+    },
+    "following": {
+        "test/14829": 1,
+        "test/14843": 1
     },
     "rise": {
         "test/14829": 1,
-        "test/14833": 2
+        "test/14833": 1
     },
-    "valu": {
-        "test/14829": 1,
-        "test/14840": 1
+    "value": {
+        "test/14829": 1
     },
     "yen": {
         "test/14829": 1,
         "test/14843": 1
     },
-    "declin": {
+    "decline": {
+        "test/14829": 1
+    },
+    "domestic": {
         "test/14829": 1,
-        "test/14832": 1
+        "test/14843": 2
     },
     "power": {
         "test/14829": 2
     },
-    "plan": {
+    "planning": {
         "test/14829": 1
     },
-    "deliber": {
+    "work": {
+        "test/14829": 1,
+        "test/14839": 1
+    },
+    "out": {
+        "test/14829": 1,
+        "test/14839": 1,
+        "test/14843": 1
+    },
+    "revised": {
         "test/14829": 1
     },
-    "committe": {
+    "through": {
+        "test/14829": 1,
+        "test/14843": 1
+    },
+    "deliberations": {
         "test/14829": 1
     },
-    "agenc": {
+    "committee": {
         "test/14829": 1
     },
-    "natur": {
+    "meetings": {
+        "test/14829": 1
+    },
+    "agency": {
+        "test/14829": 1
+    },
+    "natural": {
         "test/14829": 3,
         "test/14840": 1
     },
-    "resourc": {
+    "resources": {
         "test/14829": 1
     },
     "review": {
@@ -1396,6 +1763,14 @@
     },
     "breakdown": {
         "test/14829": 1
+    },
+    "supply": {
+        "test/14829": 1
+    },
+    "including": {
+        "test/14829": 1,
+        "test/14832": 1,
+        "test/14843": 1
     },
     "oil": {
         "test/14829": 2,
@@ -1406,13 +1781,16 @@
     "nuclear": {
         "test/14829": 2
     },
-    "ga": {
+    "gas": {
         "test/14829": 2
     },
-    "provid": {
+    "provided": {
         "test/14829": 1
     },
     "bulk": {
+        "test/14829": 1
+    },
+    "ended": {
         "test/14829": 1
     },
     "march": {
@@ -1421,6 +1799,13 @@
     "31": {
         "test/14829": 1
     },
+    "supplying": {
+        "test/14829": 1
+    },
+    "estimated": {
+        "test/14829": 1,
+        "test/14843": 1
+    },
     "27": {
         "test/14829": 1,
         "test/14832": 1
@@ -1428,7 +1813,10 @@
     "kilowatthour": {
         "test/14829": 1
     },
-    "basi": {
+    "basis": {
+        "test/14829": 1
+    },
+    "followed": {
         "test/14829": 1
     },
     "23": {
@@ -1436,10 +1824,10 @@
         "test/14832": 1,
         "test/14840": 1
     },
-    "liquefi": {
+    "liquefied": {
         "test/14829": 1
     },
-    "note": {
+    "noted": {
         "test/14829": 1
     },
     "thai": {
@@ -1448,18 +1836,17 @@
     "deficit": {
         "test/14832": 2
     },
-    "widen": {
-        "test/14832": 2
-    },
-    "IN": {
-        "test/14832": 1,
-        "test/14842": 1
+    "widens": {
+        "test/14832": 1
     },
     "quarter": {
         "test/14832": 4
     },
-    "thailand": {
+    "thailands": {
         "test/14832": 2
+    },
+    "widened": {
+        "test/14832": 1
     },
     "45": {
         "test/14832": 2
@@ -1475,7 +1862,10 @@
         "test/14832": 1,
         "test/14839": 1
     },
-    "depart": {
+    "economics": {
+        "test/14832": 1
+    },
+    "department": {
         "test/14832": 2,
         "test/14841": 2
     },
@@ -1491,14 +1881,13 @@
     "587": {
         "test/14832": 1
     },
-    "climat": {
+    "climate": {
         "test/14832": 1
     },
-    "result": {
-        "test/14832": 1,
-        "test/14843": 1
+    "resulted": {
+        "test/14832": 1
     },
-    "increas": {
+    "increase": {
         "test/14832": 1,
         "test/14833": 1,
         "test/14843": 1
@@ -1506,25 +1895,31 @@
     "raw": {
         "test/14832": 1
     },
-    "materi": {
+    "materials": {
         "test/14832": 1
     },
-    "semifinish": {
+    "semifinished": {
+        "test/14832": 1
+    },
+    "countrys": {
         "test/14832": 1
     },
     "bill": {
         "test/14832": 1
     },
-    "howev": {
+    "however": {
         "test/14832": 1
     },
     "fell": {
         "test/14832": 1
     },
-    "price": {
+    "prices": {
         "test/14832": 1,
-        "test/14833": 3,
-        "test/14841": 1
+        "test/14833": 2
+    },
+    "expanded": {
+        "test/14832": 1,
+        "test/14843": 1
     },
     "606": {
         "test/14832": 1
@@ -1539,23 +1934,30 @@
         "test/14832": 1,
         "test/14843": 1
     },
-    "earn": {
+    "than": {
+        "test/14832": 1,
+        "test/14833": 1,
+        "test/14843": 3
+    },
+    "earnings": {
         "test/14832": 2
     },
     "key": {
         "test/14832": 1
     },
-    "commod": {
-        "test/14832": 1,
-        "test/14840": 3
+    "commodities": {
+        "test/14832": 1
     },
     "rice": {
+        "test/14832": 1
+    },
+    "declined": {
         "test/14832": 1
     },
     "18": {
         "test/14832": 1
     },
-    "maiz": {
+    "maize": {
         "test/14832": 1
     },
     "66": {
@@ -1570,25 +1972,29 @@
     "26": {
         "test/14832": 1
     },
-    "can": {
+    "canned": {
         "test/14832": 1
     },
-    "pineappl": {
+    "pineapples": {
         "test/14832": 1
     },
-    "regist": {
+    "registering": {
         "test/14832": 1
     },
     "high": {
         "test/14832": 1
     },
-    "jewelleri": {
+    "were": {
+        "test/14832": 1,
+        "test/14833": 1
+    },
+    "jewellery": {
         "test/14832": 1
     },
     "64": {
         "test/14832": 1
     },
-    "cloth": {
+    "clothing": {
         "test/14832": 1
     },
     "57": {
@@ -1603,18 +2009,27 @@
     },
     "indonesia": {
         "test/14833": 4,
-        "test/14840": 2
+        "test/14840": 1
     },
-    "see": {
-        "test/14833": 1,
-        "test/14843": 1
+    "sees": {
+        "test/14833": 1
     },
     "cpo": {
         "test/14833": 4,
         "test/14840": 1
     },
-    "sharpli": {
+    "price": {
+        "test/14833": 1,
+        "test/14841": 1
+    },
+    "rising": {
+        "test/14833": 1
+    },
+    "sharply": {
         "test/14833": 2
+    },
+    "expects": {
+        "test/14833": 1
     },
     "crude": {
         "test/14833": 1,
@@ -1627,11 +2042,15 @@
     "450": {
         "test/14833": 1
     },
+    "tonne": {
+        "test/14833": 2,
+        "test/14841": 1
+    },
     "fob": {
         "test/14833": 1,
         "test/14840": 2
     },
-    "sometim": {
+    "sometime": {
         "test/14833": 1
     },
     "better": {
@@ -1659,19 +2078,23 @@
     "tree": {
         "test/14833": 1
     },
-    "crop": {
+    "crops": {
         "test/14833": 1
     },
     "indonesian": {
         "test/14833": 2,
         "test/14840": 2
     },
-    "report": {
-        "test/14833": 1,
-        "test/14840": 1
+    "reporters": {
+        "test/14833": 1
     },
     "sumatran": {
         "test/14833": 1
+    },
+    "now": {
+        "test/14833": 1,
+        "test/14840": 1,
+        "test/14843": 1
     },
     "around": {
         "test/14833": 1,
@@ -1683,7 +2106,7 @@
     "cif": {
         "test/14833": 1
     },
-    "deliveri": {
+    "delivery": {
         "test/14833": 1,
         "test/14840": 1,
         "test/14841": 1
@@ -1691,39 +2114,62 @@
     "rotterdam": {
         "test/14833": 1
     },
-    "trader": {
+    "traders": {
         "test/14833": 1,
         "test/14840": 2
     },
     "maintain": {
         "test/14833": 1
     },
-    "make": {
-        "test/14833": 1,
-        "test/14840": 2,
-        "test/14843": 1
+    "making": {
+        "test/14833": 1
     },
     "recent": {
         "test/14833": 1,
         "test/14843": 1
     },
-    "purchas": {
+    "purchases": {
         "test/14833": 1
+    },
+    "so": {
+        "test/14833": 1,
+        "test/14840": 1,
+        "test/14843": 1
+    },
+    "possibly": {
+        "test/14833": 1,
+        "test/14840": 1
     },
     "second": {
         "test/14833": 1,
         "test/14840": 1
     },
-    "forc": {
+    "producer": {
+        "test/14833": 1,
+        "test/14840": 1
+    },
+    "after": {
+        "test/14833": 1,
+        "test/14840": 1,
+        "test/14843": 1
+    },
+    "forced": {
         "test/14833": 1
     },
-    "ensur": {
+    "ensure": {
         "test/14833": 1
+    },
+    "during": {
+        "test/14833": 1,
+        "test/14840": 1
     },
     "moslem": {
         "test/14833": 1
     },
-    "fast": {
+    "fasting": {
+        "test/14833": 1
+    },
+    "month": {
         "test/14833": 1
     },
     "ramadan": {
@@ -1732,10 +2178,10 @@
     "cover": {
         "test/14833": 1
     },
-    "temporari": {
+    "temporary": {
         "test/14833": 1
     },
-    "shortag": {
+    "shortage": {
         "test/14833": 1
     },
     "lose": {
@@ -1756,7 +2202,7 @@
     "468500": {
         "test/14833": 1
     },
-    "accord": {
+    "according": {
         "test/14833": 1
     },
     "central": {
@@ -1764,30 +2210,33 @@
     },
     "bank": {
         "test/14833": 1,
-        "test/14843": 16
+        "test/14843": 11
     },
-    "figur": {
+    "figures": {
         "test/14833": 1
     },
     "ship": {
-        "test/14839": 5
+        "test/14839": 1
     },
     "ban": {
         "test/14839": 3
     },
+    "ends": {
+        "test/14839": 1
+    },
     "nsw": {
         "test/14839": 5
     },
-    "port": {
-        "test/14839": 8
+    "ports": {
+        "test/14839": 5
     },
     "tug": {
         "test/14839": 1
     },
-    "crew": {
+    "crews": {
         "test/14839": 1
     },
-    "wale": {
+    "wales": {
         "test/14839": 1
     },
     "victoria": {
@@ -1797,28 +2246,45 @@
         "test/14839": 1,
         "test/14842": 2
     },
-    "lift": {
+    "australia": {
+        "test/14839": 1,
+        "test/14842": 1
+    },
+    "lifted": {
         "test/14839": 1
     },
     "foreignflag": {
         "test/14839": 1
     },
-    "carri": {
+    "ships": {
         "test/14839": 1
     },
-    "contain": {
-        "test/14839": 2
+    "carrying": {
+        "test/14839": 1
+    },
+    "containers": {
+        "test/14839": 1
     },
     "still": {
         "test/14839": 1,
         "test/14840": 1
     },
-    "disrupt": {
-        "test/14839": 4
-    },
-    "separ": {
+    "being": {
         "test/14839": 1,
+        "test/14840": 2,
         "test/14843": 1
+    },
+    "disrupted": {
+        "test/14839": 2
+    },
+    "separate": {
+        "test/14839": 1
+    },
+    "shipping": {
+        "test/14839": 3
+    },
+    "imposed": {
+        "test/14839": 1
     },
     "pay": {
         "test/14839": 2,
@@ -1827,32 +2293,45 @@
     "claim": {
         "test/14839": 1
     },
+    "prevented": {
+        "test/14839": 1
+    },
     "movement": {
+        "test/14839": 1
+    },
+    "port": {
         "test/14839": 3
     },
-    "nearli": {
+    "nearly": {
         "test/14839": 1
     },
     "20": {
         "test/14839": 1,
         "test/14841": 1
     },
-    "vessel": {
+    "vessels": {
         "test/14839": 1
     },
     "went": {
         "test/14839": 1
     },
-    "hear": {
+    "before": {
+        "test/14839": 1,
+        "test/14843": 1
+    },
+    "hearing": {
         "test/14839": 1
     },
-    "arbitr": {
+    "arbitration": {
         "test/14839": 1
     },
-    "commiss": {
+    "commission": {
         "test/14839": 1
     },
     "today": {
+        "test/14839": 2
+    },
+    "disruption": {
         "test/14839": 2
     },
     "began": {
@@ -1861,13 +2340,13 @@
     "cargo": {
         "test/14839": 2
     },
-    "handl": {
+    "handling": {
         "test/14839": 2
     },
     "sydney": {
         "test/14839": 1
     },
-    "newcastl": {
+    "newcastle": {
         "test/14839": 1
     },
     "kembla": {
@@ -1875,6 +2354,13 @@
     },
     "part": {
         "test/14839": 1
+    },
+    "called": {
+        "test/14839": 1
+    },
+    "trades": {
+        "test/14839": 1,
+        "test/14840": 1
     },
     "labour": {
         "test/14839": 1
@@ -1885,30 +2371,30 @@
     "protest": {
         "test/14839": 1
     },
-    "state": {
+    "states": {
         "test/14839": 1,
         "test/14840": 1
     },
-    "worker": {
+    "workers": {
         "test/14839": 1
     },
-    "compens": {
+    "compensation": {
         "test/14839": 1
     },
-    "law": {
+    "laws": {
         "test/14839": 1
     },
-    "variou": {
+    "various": {
         "test/14839": 1,
         "test/14843": 1
     },
-    "union": {
+    "unions": {
         "test/14839": 1
     },
     "appear": {
         "test/14839": 1
     },
-    "take": {
+    "taking": {
         "test/14839": 1,
         "test/14843": 1
     },
@@ -1925,17 +2411,42 @@
     "shift": {
         "test/14839": 1
     },
+    "then": {
+        "test/14839": 1
+    },
     "walk": {
         "test/14839": 1
     },
-    "affect": {
+    "off": {
+        "test/14839": 1,
+        "test/14843": 2
+    },
+    "container": {
         "test/14839": 1
     },
-    "stop": {
+    "movements": {
+        "test/14839": 2
+    },
+    "most": {
+        "test/14839": 1,
+        "test/14843": 2
+    },
+    "affected": {
         "test/14839": 1
     },
-    "altogeth": {
+    "stopped": {
         "test/14839": 1
+    },
+    "altogether": {
+        "test/14839": 1
+    },
+    "say": {
+        "test/14839": 1,
+        "test/14840": 1
+    },
+    "how": {
+        "test/14839": 1,
+        "test/14843": 1
     },
     "long": {
         "test/14839": 1
@@ -1944,17 +2455,21 @@
         "test/14839": 1,
         "test/14840": 1
     },
+    "what": {
+        "test/14839": 1
+    },
     "effect": {
-        "test/14839": 1,
-        "test/14843": 1
+        "test/14839": 1
+    },
+    "commodity": {
+        "test/14840": 3
     },
     "may": {
         "test/14840": 2,
         "test/14843": 1
     },
-    "like": {
-        "test/14840": 2,
-        "test/14843": 1
+    "likely": {
+        "test/14840": 2
     },
     "least": {
         "test/14840": 1,
@@ -1966,7 +2481,11 @@
     "nainggolan": {
         "test/14840": 3
     },
-    "telephon": {
+    "reuters": {
+        "test/14840": 1,
+        "test/14843": 1
+    },
+    "telephone": {
         "test/14840": 1
     },
     "interview": {
@@ -1985,27 +2504,30 @@
     "tobacco": {
         "test/14840": 1
     },
-    "consid": {
-        "test/14840": 3
+    "considered": {
+        "test/14840": 2
     },
     "either": {
         "test/14840": 1
     },
-    "refin": {
+    "refined": {
         "test/14840": 1
     },
-    "introduc": {
+    "introduced": {
         "test/14840": 1
     },
     "question": {
         "test/14840": 1,
-        "test/14843": 2
+        "test/14843": 1
     },
     "rachmat": {
         "test/14840": 1
     },
     "saleh": {
         "test/14840": 2
+    },
+    "when": {
+        "test/14840": 1
     },
     "ahead": {
         "test/14840": 1
@@ -2014,19 +2536,19 @@
         "test/14840": 2,
         "test/14843": 1
     },
-    "fledgl": {
+    "fledgling": {
         "test/14840": 1
     },
-    "current": {
+    "currently": {
         "test/14840": 1
     },
-    "coffe": {
+    "coffee": {
         "test/14840": 5
     },
-    "physic": {
-        "test/14840": 2
+    "physicals": {
+        "test/14840": 1
     },
-    "outcri": {
+    "outcry": {
         "test/14840": 1
     },
     "system": {
@@ -2035,38 +2557,53 @@
     "four": {
         "test/14840": 2
     },
-    "sever": {
+    "days": {
         "test/14840": 1
     },
-    "factor": {
+    "several": {
         "test/14840": 1
     },
-    "cautious": {
+    "factors": {
+        "test/14840": 1
+    },
+    "make": {
+        "test/14840": 2,
+        "test/14843": 1
+    },
+    "cautiously": {
         "test/14840": 1,
         "test/14843": 1
     },
-    "slowli": {
+    "slowly": {
         "test/14840": 1
     },
-    "mistak": {
+    "safely": {
         "test/14840": 1
     },
-    "undermin": {
+    "mistake": {
         "test/14840": 1
     },
-    "confid": {
+    "undermine": {
+        "test/14840": 1
+    },
+    "confidence": {
+        "test/14840": 1
+    },
+    "physical": {
+        "test/14840": 1
+    },
+    "added": {
         "test/14840": 1,
         "test/14843": 1
     },
-    "ad": {
-        "test/14840": 1,
-        "test/14843": 1
-    },
-    "januari": {
+    "january": {
         "test/14840": 1
     },
-    "contract": {
+    "contracts": {
         "test/14840": 1
+    },
+    "traded": {
+        "test/14840": 2
     },
     "five": {
         "test/14840": 3,
@@ -2078,7 +2615,7 @@
     "robusta": {
         "test/14840": 1
     },
-    "grade": {
+    "grades": {
         "test/14840": 1
     },
     "prompt": {
@@ -2088,65 +2625,81 @@
         "test/14840": 1,
         "test/14843": 1
     },
-    "introduct": {
+    "considering": {
         "test/14840": 1
     },
-    "futur": {
-        "test/14840": 1,
-        "test/14843": 1
+    "introduction": {
+        "test/14840": 1
+    },
+    "futures": {
+        "test/14840": 1
     },
     "later": {
         "test/14840": 1
     },
-    "feasibl": {
+    "feasibility": {
         "test/14840": 1
     },
-    "studi": {
+    "study": {
         "test/14840": 1
     },
-    "need": {
+    "needed": {
+        "test/14840": 1
+    },
+    "decisions": {
+        "test/14840": 1
+    },
+    "until": {
         "test/14840": 1,
-        "test/14843": 1
+        "test/14843": 2
     },
-    "No": {
+    "indonesias": {
         "test/14840": 1
     },
-    "elect": {
+    "elections": {
         "test/14840": 1
     },
     "monday": {
         "test/14840": 1
     },
-    "hope": {
+    "should": {
+        "test/14840": 1
+    },
+    "marketing": {
+        "test/14840": 1
+    },
+    "hoped": {
+        "test/14840": 1
+    },
+    "development": {
+        "test/14840": 1
+    },
+    "help": {
+        "test/14840": 1
+    },
+    "trying": {
+        "test/14840": 1
+    },
+    "overseas": {
         "test/14840": 1,
         "test/14843": 1
     },
-    "develop": {
+    "building": {
         "test/14840": 1
     },
-    "tri": {
+    "contacts": {
         "test/14840": 1
     },
-    "oversea": {
-        "test/14840": 1,
-        "test/14843": 1
-    },
-    "build": {
+    "endusers": {
         "test/14840": 1
     },
-    "contact": {
+    "teams": {
         "test/14840": 1
     },
-    "endus": {
+    "already": {
         "test/14840": 1
     },
-    "team": {
-        "test/14840": 1
-    },
-    "alreadi": {
-        "test/14840": 1
-    },
-    "encourag": {
+    "encourage": {
         "test/14840": 2
     },
     "direct": {
@@ -2155,13 +2708,13 @@
     "use": {
         "test/14840": 1
     },
-    "deleg": {
+    "delegation": {
         "test/14840": 1
     },
     "visit": {
         "test/14840": 1
     },
-    "europ": {
+    "europe": {
         "test/14840": 1
     },
     "mexico": {
@@ -2170,26 +2723,29 @@
     "latin": {
         "test/14840": 1
     },
-    "particip": {
+    "participation": {
         "test/14840": 1
     },
     "infant": {
         "test/14840": 1
     },
+    "good": {
+        "test/14840": 1
+    },
     "although": {
         "test/14840": 1
     },
-    "disappoint": {
+    "disappointing": {
         "test/14840": 1
     },
-    "transact": {
+    "transactions": {
         "test/14840": 1
     },
-    "decemb": {
+    "december": {
         "test/14840": 1
     },
-    "total": {
-        "test/14840": 2
+    "totalled": {
+        "test/14840": 1
     },
     "9595": {
         "test/14840": 1
@@ -2200,7 +2756,7 @@
     "69": {
         "test/14840": 1
     },
-    "plu": {
+    "plus": {
         "test/14840": 1
     },
     "1843": {
@@ -2209,18 +2765,24 @@
     "rupiah": {
         "test/14840": 2
     },
-    "deliv": {
+    "delivered": {
         "test/14840": 1
     },
-    "local": {
-        "test/14840": 1,
-        "test/14842": 1
+    "locally": {
+        "test/14840": 1
     },
     "latest": {
         "test/14840": 1
     },
-    "amount": {
+    "report": {
         "test/14840": 1
+    },
+    "amounted": {
+        "test/14840": 1
+    },
+    "only": {
+        "test/14840": 1,
+        "test/14843": 1
     },
     "1905": {
         "test/14840": 1
@@ -2228,17 +2790,25 @@
     "381": {
         "test/14840": 1
     },
-    "lot": {
-        "test/14840": 1,
-        "test/14843": 1
+    "lots": {
+        "test/14840": 1
+    },
+    "valued": {
+        "test/14840": 1
     },
     "687": {
+        "test/14840": 1
+    },
+    "total": {
         "test/14840": 1
     },
     "membership": {
         "test/14840": 1
     },
     "nine": {
+        "test/14840": 1
+    },
+    "brokers": {
         "test/14840": 1
     },
     "44": {
@@ -2250,16 +2820,13 @@
     "lanka": {
         "test/14841": 1
     },
-    "get": {
+    "gets": {
         "test/14841": 1
     },
     "usda": {
         "test/14841": 1
     },
-    "approv": {
-        "test/14841": 2
-    },
-    "for": {
+    "approval": {
         "test/14841": 1
     },
     "wheat": {
@@ -2268,10 +2835,16 @@
     "food": {
         "test/14841": 1
     },
-    "agricultur": {
+    "agriculture": {
         "test/14841": 1
     },
-    "continent": {
+    "approved": {
+        "test/14841": 1
+    },
+    "continental": {
+        "test/14841": 1
+    },
+    "sale": {
         "test/14841": 1
     },
     "52500": {
@@ -2283,13 +2856,13 @@
     "89": {
         "test/14841": 1
     },
-    "C": {
+    "c": {
         "test/14841": 1
     },
-    "F": {
+    "f": {
         "test/14841": 1
     },
-    "pacif": {
+    "pacific": {
         "test/14841": 1
     },
     "northwest": {
@@ -2304,20 +2877,22 @@
     "8": {
         "test/14841": 1
     },
-    "mine": {
-        "test/14842": 6
+    "mining": {
+        "test/14842": 2
     },
     "gold": {
         "test/14842": 3
     },
+    "mine": {
+        "test/14842": 4
+    },
     "corp": {
         "test/14842": 1
     },
-    "hold": {
-        "test/14842": 1,
-        "test/14843": 2
+    "holdings": {
+        "test/14842": 1
     },
-    "ltwmng": {
+    "ltwmngs": {
         "test/14842": 1
     },
     "wmc": {
@@ -2329,22 +2904,29 @@
     "joint": {
         "test/14842": 1
     },
-    "ventur": {
+    "venture": {
         "test/14842": 1
     },
     "northern": {
         "test/14842": 1
     },
-    "territori": {
+    "territory": {
         "test/14842": 1
+    },
+    "about": {
+        "test/14842": 3,
+        "test/14843": 2
     },
     "known": {
         "test/14842": 1
     },
-    "goodal": {
+    "goodall": {
         "test/14842": 1
     },
-    "own": {
+    "project": {
+        "test/14842": 1
+    },
+    "owned": {
         "test/14842": 1
     },
     "60": {
@@ -2353,7 +2935,10 @@
     "40": {
         "test/14842": 1
     },
-    "WR": {
+    "local": {
+        "test/14842": 1
+    },
+    "wr": {
         "test/14842": 1
     },
     "grace": {
@@ -2365,22 +2950,22 @@
     "unit": {
         "test/14842": 1
     },
-    "locat": {
+    "located": {
         "test/14842": 1
     },
-    "km": {
+    "kms": {
         "test/14842": 1
     },
     "east": {
         "test/14842": 1
     },
-    "adelaid": {
+    "adelaide": {
         "test/14842": 1
     },
     "river": {
         "test/14842": 1
     },
-    "Mt": {
+    "mt": {
         "test/14842": 1
     },
     "bundey": {
@@ -2392,7 +2977,7 @@
     "openpit": {
         "test/14842": 1
     },
-    "convent": {
+    "conventional": {
         "test/14842": 1
     },
     "leach": {
@@ -2404,10 +2989,13 @@
     "plant": {
         "test/14842": 1
     },
+    "produce": {
+        "test/14842": 1
+    },
     "50000": {
         "test/14842": 1
     },
-    "ounc": {
+    "ounces": {
         "test/14842": 1
     },
     "mid1988": {
@@ -2419,25 +3007,22 @@
     "ore": {
         "test/14842": 1
     },
-    "capac": {
+    "capacity": {
         "test/14842": 1
     },
     "750000": {
         "test/14842": 1
     },
     "sumitomo": {
-        "test/14843": 15
+        "test/14843": 12
     },
-    "aim": {
-        "test/14843": 1
-    },
-    "AT": {
+    "aims": {
         "test/14843": 1
     },
     "quick": {
         "test/14843": 1
     },
-    "recoveri": {
+    "recovery": {
         "test/14843": 1
     },
     "merger": {
@@ -2449,11 +3034,14 @@
     "certain": {
         "test/14843": 1
     },
-    "statu": {
+    "status": {
         "test/14843": 1
     },
-    "profit": {
-        "test/14843": 3
+    "profitable": {
+        "test/14843": 2
+    },
+    "result": {
+        "test/14843": 1
     },
     "heiwa": {
         "test/14843": 4
@@ -2461,10 +3049,13 @@
     "sogo": {
         "test/14843": 4
     },
-    "osakabas": {
+    "analysts": {
+        "test/14843": 4
+    },
+    "osakabased": {
         "test/14843": 1
     },
-    "desposit": {
+    "desposits": {
         "test/14843": 1
     },
     "239": {
@@ -2473,31 +3064,31 @@
     "trillion": {
         "test/14843": 1
     },
-    "merg": {
+    "merged": {
         "test/14843": 1
     },
     "small": {
         "test/14843": 2
     },
-    "struggl": {
+    "struggling": {
         "test/14843": 1
     },
     "129": {
         "test/14843": 1
     },
-    "unrecover": {
+    "unrecoverable": {
         "test/14843": 1
     },
-    "loan": {
+    "loans": {
         "test/14843": 1
     },
-    "octob": {
+    "october": {
         "test/14843": 1
     },
     "linkup": {
         "test/14843": 1
     },
-    "presid": {
+    "president": {
         "test/14843": 1
     },
     "koh": {
@@ -2506,10 +3097,19 @@
     "komatsu": {
         "test/14843": 9
     },
+    "confident": {
+        "test/14843": 1
+    },
+    "his": {
+        "test/14843": 1
+    },
+    "can": {
+        "test/14843": 2
+    },
     "regain": {
         "test/14843": 1
     },
-    "posit": {
+    "position": {
         "test/14843": 2
     },
     "well": {
@@ -2524,13 +3124,22 @@
     "three": {
         "test/14843": 3
     },
-    "initi": {
-        "test/14843": 2
+    "years": {
+        "test/14843": 3
     },
-    "effici": {
+    "initially": {
         "test/14843": 1
     },
-    "vastli": {
+    "sumitomos": {
+        "test/14843": 3
+    },
+    "profitability": {
+        "test/14843": 1
+    },
+    "efficiency": {
+        "test/14843": 1
+    },
+    "vastly": {
         "test/14843": 1
     },
     "branch": {
@@ -2545,86 +3154,98 @@
     "area": {
         "test/14843": 1
     },
-    "rel": {
+    "relatively": {
         "test/14843": 1
     },
     "weak": {
         "test/14843": 1
     },
-    "divid": {
+    "divided": {
         "test/14843": 1
     },
     "whether": {
         "test/14843": 1
     },
-    "gambl": {
-        "test/14843": 1
-    },
-    "some": {
+    "gamble": {
         "test/14843": 1
     },
     "paid": {
         "test/14843": 1
     },
-    "debt": {
+    "too": {
         "test/14843": 1
     },
-    "other": {
+    "banks": {
+        "test/14843": 4
+    },
+    "debts": {
         "test/14843": 1
     },
-    "argu": {
+    "others": {
         "test/14843": 1
     },
-    "creat": {
-        "test/14843": 2
+    "argue": {
+        "test/14843": 1
     },
-    "compar": {
+    "effective": {
+        "test/14843": 1
+    },
+    "creating": {
+        "test/14843": 1
+    },
+    "comparable": {
         "test/14843": 1
     },
     "scratch": {
         "test/14843": 1
     },
-    "agre": {
+    "agreed": {
         "test/14843": 2
     },
-    "aggress": {
+    "aggressive": {
         "test/14843": 1
     },
-    "enter": {
-        "test/14843": 3
-    },
-    "lucr": {
+    "entered": {
         "test/14843": 1
     },
-    "secur": {
+    "lucrative": {
+        "test/14843": 1
+    },
+    "securities": {
         "test/14843": 9
     },
-    "gear": {
+    "geared": {
         "test/14843": 1
     },
-    "competit": {
+    "competition": {
+        "test/14843": 1
+    },
+    "questioned": {
         "test/14843": 1
     },
     "wisdom": {
         "test/14843": 1
     },
-    "theyv": {
+    "moves": {
+        "test/14843": 2
+    },
+    "theyve": {
         "test/14843": 1
     },
     "bold": {
         "test/14843": 2
     },
-    "everyth": {
+    "everything": {
         "test/14843": 1
     },
-    "now": {
+    "largely": {
         "test/14843": 1
     },
-    "hand": {
+    "hands": {
         "test/14843": 1
     },
     "kleinwort": {
-        "test/14843": 2
+        "test/14843": 1
     },
     "benson": {
         "test/14843": 1
@@ -2635,16 +3256,22 @@
     "smithson": {
         "test/14843": 2
     },
-    "limit": {
-        "test/14843": 2
+    "limits": {
+        "test/14843": 1
     },
-    "invest": {
+    "placed": {
+        "test/14843": 1
+    },
+    "enter": {
+        "test/14843": 1
+    },
+    "investment": {
         "test/14843": 2
     },
     "goldman": {
         "test/14843": 1
     },
-    "sach": {
+    "sachs": {
         "test/14843": 1
     },
     "500": {
@@ -2653,7 +3280,16 @@
     "125": {
         "test/14843": 1
     },
+    "limited": {
+        "test/14843": 1
+    },
     "partnership": {
+        "test/14843": 1
+    },
+    "federal": {
+        "test/14843": 1
+    },
+    "reserve": {
         "test/14843": 1
     },
     "forbidden": {
@@ -2665,10 +3301,10 @@
     "tieup": {
         "test/14843": 1
     },
-    "wide": {
+    "widely": {
         "test/14843": 1
     },
-    "look": {
+    "looked": {
         "test/14843": 1
     },
     "lame": {
@@ -2683,13 +3319,19 @@
     "stricter": {
         "test/14843": 1
     },
-    "regul": {
+    "regulations": {
+        "test/14843": 1
+    },
+    "change": {
         "test/14843": 1
     },
     "near": {
         "test/14843": 1
     },
-    "thing": {
+    "future": {
+        "test/14843": 1
+    },
+    "things": {
         "test/14843": 1
     },
     "wait": {
@@ -2698,22 +3340,25 @@
     "21st": {
         "test/14843": 1
     },
-    "centuri": {
+    "century": {
         "test/14843": 1
     },
-    "will": {
+    "willing": {
         "test/14843": 1
     },
     "patient": {
         "test/14843": 1
     },
-    "rout": {
+    "routes": {
+        "test/14843": 1
+    },
+    "into": {
         "test/14843": 1
     },
     "home": {
         "test/14843": 1
     },
-    "articl": {
+    "article": {
         "test/14843": 1
     },
     "65": {
@@ -2725,65 +3370,95 @@
     "version": {
         "test/14843": 1
     },
-    "glasssteagal": {
+    "glasssteagall": {
         "test/14843": 1
     },
-    "wall": {
+    "separates": {
         "test/14843": 1
     },
-    "crumbl": {
+    "banking": {
         "test/14843": 1
     },
-    "deregul": {
+    "walls": {
+        "test/14843": 1
+    },
+    "crumbling": {
+        "test/14843": 1
+    },
+    "hopes": {
+        "test/14843": 1
+    },
+    "deregulation": {
         "test/14843": 2
     },
-    "opportun": {
+    "create": {
+        "test/14843": 1
+    },
+    "opportunities": {
+        "test/14843": 1
+    },
+    "need": {
         "test/14843": 1
     },
     "find": {
         "test/14843": 1
     },
-    "chanc": {
+    "chances": {
         "test/14843": 1
     },
-    "case": {
+    "cases": {
+        "test/14843": 2
+    },
+    "these": {
+        "test/14843": 1
+    },
+    "related": {
         "test/14843": 2
     },
     "trust": {
         "test/14843": 1
     },
-    "until": {
+    "thats": {
         "test/14843": 1
     },
     "occur": {
         "test/14843": 1
     },
-    "focu": {
+    "focus": {
         "test/14843": 1
     },
     "bond": {
         "test/14843": 1
     },
-    "deal": {
+    "dealing": {
         "test/14843": 1
     },
-    "strengthen": {
+    "strengthening": {
         "test/14843": 1
     },
     "meiko": {
         "test/14843": 1
     },
-    "optimist": {
+    "holds": {
+        "test/14843": 2
+    },
+    "optimistic": {
+        "test/14843": 1
+    },
+    "entering": {
+        "test/14843": 1
+    },
+    "here": {
         "test/14843": 1
     },
     "swiss": {
         "test/14843": 1
     },
-    "univers": {
+    "universal": {
         "test/14843": 2
     },
-    "subsidiari": {
-        "test/14843": 4
+    "subsidiary": {
+        "test/14843": 2
     },
     "banca": {
         "test/14843": 1
@@ -2794,14 +3469,17 @@
     "gottardo": {
         "test/14843": 2
     },
-    "financ": {
+    "finance": {
         "test/14843": 1
     },
     "grant": {
         "test/14843": 1
     },
-    "licenc": {
+    "licences": {
         "test/14843": 1
+    },
+    "subsidiaries": {
+        "test/14843": 2
     },
     "soon": {
         "test/14843": 1
@@ -2815,11 +3493,11 @@
     "50": {
         "test/14843": 1
     },
-    "reluct": {
+    "reluctant": {
         "test/14843": 1
     },
     "push": {
-        "test/14843": 2
+        "test/14843": 1
     },
     "hard": {
         "test/14843": 1
@@ -2827,55 +3505,82 @@
     "dont": {
         "test/14843": 1
     },
-    "wave": {
+    "waves": {
         "test/14843": 1
     },
-    "lend": {
+    "expect": {
         "test/14843": 1
     },
-    "individu": {
+    "allowed": {
+        "test/14843": 1
+    },
+    "like": {
+        "test/14843": 1
+    },
+    "city": {
+        "test/14843": 1
+    },
+    "pushing": {
+        "test/14843": 1
+    },
+    "lending": {
+        "test/14843": 1
+    },
+    "individuals": {
         "test/14843": 1
     },
     "medium": {
         "test/14843": 1
     },
-    "replac": {
+    "businesses": {
         "test/14843": 1
     },
-    "disappear": {
+    "replace": {
+        "test/14843": 1
+    },
+    "disappearing": {
         "test/14843": 1
     },
     "big": {
         "test/14843": 1
     },
-    "devot": {
+    "devote": {
         "test/14843": 1
     },
-    "digest": {
+    "lot": {
         "test/14843": 1
     },
-    "ail": {
+    "digesting": {
         "test/14843": 1
     },
-    "it": {
+    "initiatives": {
         "test/14843": 1
     },
-    "strategi": {
-        "test/14843": 2
-    },
-    "after": {
+    "ailing": {
         "test/14843": 1
     },
-    "absorb": {
+    "strategies": {
         "test/14843": 1
     },
-    "juggl": {
+    "kleinworts": {
+        "test/14843": 1
+    },
+    "absorbing": {
+        "test/14843": 1
+    },
+    "juggling": {
         "test/14843": 1
     },
     "next": {
         "test/14843": 1
     },
-    "decad": {
+    "decade": {
+        "test/14843": 1
+    },
+    "see": {
+        "test/14843": 1
+    },
+    "strategy": {
         "test/14843": 1
     },
     "right": {

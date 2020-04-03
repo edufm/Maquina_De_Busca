@@ -1,17 +1,64 @@
 '''Funções para realzação dos diferentes tipos de busca
 '''
 import re
+import math
 from search_engine import corretor
 from nltk.tokenize import sexpr_tokenize
 
+def strip_parenthesis(query):
+    
+    if query[0] == "(":
+        query = query[1:]
+    if query[-1] == ")":
+        query = query[:-1]
+    
+    return query.lower()
 
-def naive_search(index, query):
+
+def busca_docids(index, query, use_corretor=True, in_sub_query=False):
+    '''Executa uma query que exige o texto conter as palavras da query com 
+       logica "E" (sem parenteses) ou "OR" (entre parenteses).
+
+        Args:
+            index: dicionario que mapeia palavra para um dicionario que mapeia 
+                docids para a contagem dessa palavra no documento.
+            repo: dicionario que mapeia docid para uma lista de tokens.
+            query: string com as plavras que o documento deve conter
+        
+        Returns:
+            Uma lista com os documentos selecionados.
+    '''
+    queries = [strip_parenthesis(q) for q in sexpr_tokenize(query)]
+    results = []
+    for sub_query in queries:
+
+        if "(" in sub_query:
+            sub_docids = busca_docids(index, sub_query, in_sub_query=True)
+        
+        else:
+            if use_corretor:
+                split_query = [corretor.run(word, list(index.keys())) for word in sub_query.split(" ")]
+                sub_query = " "
+                sub_query = sub_query.join(split_query).strip(" ")
+            
+            sub_docids = or_search(index, sub_query)
+        
+        results.append(set(sub_docids))
+
+    if in_sub_query:
+        docids = set.union(*results)
+    else:
+        docids = set.intersection(*results)
+    
+    return docids
+
+
+def or_search(index, query):
     '''Executa uma query que exige o texto conter todas as palavras.
 
     Args:
         index: dicionario que mapeia palavra para um dicionario que mapeia 
                 docids para a contagem dessa palavra no documento.
-        repo: dicionario que mapeia docid para uma lista de tokens.
         query: string com as plavras que o documento deve conter
         
     Returns:
@@ -21,8 +68,6 @@ def naive_search(index, query):
     query = re.sub(r"[^a-zA-Z0-9 ]", "", query, flags=re.DOTALL|re.MULTILINE)
     split_query = query.split(" ")
 
-    split_query = [corretor.run(word, list(index.keys())) for word in split_query]    
-    print(split_query)
     # Recuperar os ids de documento que contem todos os termos da query.
     available_words = index.keys()
     score = []
@@ -31,94 +76,27 @@ def naive_search(index, query):
         if word in available_words:
             score.append(set(index[word].keys()))
         else:
-            return []       
+            score.append(set())
     # Retornar os textos destes documentos.
     results = score[0]
     for result in score[1:]:
-        results = results.intersection(result)
+        results = results.union(result)
     
     return results
-
-
-def and_or_search(index, repo, query):
-    '''Executa uma query que exige o texto conter as palavras da query com 
-    logica "E" (sem parenteses) ou "ou" (entre parenteses).
-
-    Args:
-        index: dicionario que mapeia palavra para um dicionario que mapeia 
-                docids para a contagem dessa palavra no documento.
-        repo: dicionario que mapeia docid para uma lista de tokens.
-        query: string com as plavras que o documento deve conter
-        
-    Returns:
-        Uma lista com os documentos selecionados.
-    '''
-    # Verifica as palavras na query
-    split_query = list(map(lambda x: x.strip("()"), query.split(" ")))
-        
-    # Processa a query para ver onde estão os "ors"
-    ors = []
-    ors_loc = {}
-    for  n, char in enumerate(query):
-        
-        if char == "(":
-            start = n
-        elif char == ")":
-            end = n
-            # Guarda cada pavra do or e sua posição
-            ors.append(query[start+1:end].split(" "))
-            for word in ors[-1]:
-                ors_loc[word] = len(ors)-1
-    
-    # Itera as palavras da query para ver em que texto aprecem
-    score = []
-    done = []
-    available_words = index.keys()
-    for word in split_query:
-        # Verifica se a palavra ja havia sido feita (em um or por exemplo)
-        if word not in done:
-            # Processa a palavra que estão em um "or"
-            if word in ors_loc.keys():
-                # Pega o score para a primeira palavra e verifica quais outras palavras estão no or
-                if not word in available_words:
-                    this_score = set()
-                else:
-                    this_score = set(index[word].keys())                
-                or_words = ors[ors_loc[word]]
-                or_words.remove(word)
-                # Itera o restante das palavras e adiciona ao score
-                for or_word in ors[ors_loc[word]]:
-                    if not or_word in available_words:
-                        this_score = this_score.union(set())
-                    else:
-                        this_score = this_score.union(set(index[or_word].keys()))
-                    done.append(or_word)
-                    
-            # Processa a palavra que não estão em um "or"
-            else:
-                this_score = set(index[word].keys())
-    
-            score.append(this_score)
-        
-    # Faz a intersecção de todos os scores
-    results = set.intersection(*score)
-        
-    return results
-
-
-def busca_docids(index, query):
-    result = [q.strip().strip('()') for q in sexpr_tokenize(query)]
-    docids = set()
-    for subquery in result:
-        res = naive_search(index, subquery)
-        docids |= res
-
-    return docids
 
 
 def rank(docids, index, repo):
-    import math
+    '''Utiliza o TF-IDF para verificar quais documentos tem mais palavras incomuns
 
+    Args:
+        repo: Um dicionário que mapeia docid para uma lista de tokens.
+        index: dicionario que mapeia palavra para um dicionario que mapeia 
+                docids para a contagem dessa palavra no documento.
+        docides: lista de documentos para avaliar
+        
+    Returns:
+        Uma lista com os documentos ordenados.
+    '''
     rank = {}
 
     for docid in docids:

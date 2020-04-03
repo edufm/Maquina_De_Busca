@@ -11,11 +11,11 @@ def main():
                         help='Arquivo json com um dicionario docid para texto',
                         type= str, default= "(asian (US rise)) (export banana)", nargs='?')
     
-    parser.add_argument('DO_SETUP', 
+    parser.add_argument('DOSETUP', 
                         help='Arquivo json com um dicionario docid para texto',
                         type= bool, default= False, nargs='?')
 
-    parser.add_argument('TEST_MODE', 
+    parser.add_argument('TESTMODE', 
                         help='Arquivo json com um dicionario docid para texto',
                         type= bool, default= True, nargs='?')
 
@@ -25,34 +25,44 @@ def main():
     corpus_file = (f"./storage/corpus_{args.target_corpus}_mini" if(args.TEST_MODE) else f"./storage/corpus_{args.target_corpus}")
     repo_file   = f"./storage/repo_{args.target_corpus}"
     index_file  = f"./storage/index_{args.target_corpus}"
+	
+	stopwords = (True, "freq")
+	normalize=(True, "lower")
     
-    # ---------------------------- Setup do Repo ----------------------------------
-    if args.DO_SETUP:
-        # Cria o corpus
-        se.gera_corpus.run(args.target_corpus)
-        
-        # Cria o repo e indice
-        se.indexador.run(args.target_corpus, corpus_file)
-        
-    # Lê o repo
-    repo = se.repository.load(repo_file)
-    
-    # Lê o indice
-    index = se.repository.load(index_file)
-    
-    
-    # -------------------------------- Querys -------------------------------------
-    naive_results = list(se.search.naive_search(index, args.query))
-    and_or_results = list(se.search.and_or_search(index, repo, args.query))
-    busca_results = list(se.search.busca_docids(index, args.query))
+	# ---------------------------- Setup do Repo ----------------------------------
+	if args.DOSETUP:
+		# Cria o corpus
+		se.gera_corpus.run(args.target_corpus, file=corpus_file, TESTMODE=args.TESTMODE)
+		
+		# Cria o repo e indice
+		se.indexador.run(args.target_corpus, corpus_file, repo_file=repo_file, index_file=index_file,
+						 stopwords=stopwords, normalize=normalize)
+		
+	# Lê o corpus
+	corpus = se.repository.load(corpus_file)    
 
-    rank = se.search.rank(and_or_results, index, repo)
-    print(f"rank:{rank}")
+	# Lê o repo
+	repo = se.repository.load(repo_file)
+
+	# Lê o indice
+	index = se.repository.load(index_file)
 
 
-    print({"naive_results":naive_results,
-        "and_or_results":and_or_results,
-        "busca_results" :busca_results})
+	# -------------------------------- Querys -------------------------------------
+	docids = list(se.search.busca_docids(index, args.query))
+
+	rank = se.search.rank(docids, index, repo)
+
+	if len(rank) > 0:
+		print(rank)
+		print()
+		print()
+		for docid in rank:
+			print(corpus[docid])
+			print()
+			print()
+	else:
+		print("No match for query")
 
 if __name__ == '__main__':
     main()

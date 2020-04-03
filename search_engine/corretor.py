@@ -1,13 +1,14 @@
-
-#from nlt.metrics import edit_distance
 from nltk.corpus import wordnet
 
-#wordnet.synsets - > facil xbugado
-#sinonimos 
-#Rank -> alto
-#palavas populares - >
-
 def dist1(term):
+    '''Cria uma lista com todas os termos com distância de edição 1 para o termo recebido
+
+    Args:
+        term: palavra que se deseja propagar
+    
+    Returns:
+        Uma lista com os termos de  distancia 1.
+    '''    
     letters = "abcdefghijklmnopqrstuvwxyz"
     split   = [(term[:i], term[i:]) for i in range(len(term))] 
     
@@ -19,6 +20,15 @@ def dist1(term):
 
 
 def dist2(ed1):
+    '''Cria uma lista com todas os termos com distância de edição 1 para 
+       os termos que ja tem distancia 1 recebidos
+
+    Args:
+        ed1: termos com distancia de edição 1
+    
+    Returns:
+        Uma lista com os termos de  distancia 2.
+    '''
     ed2 = set()
     for word in ed1:
         ed2.update(dist1(word))
@@ -26,11 +36,17 @@ def dist2(ed1):
     return ed2
 
 
-def similarity(word):
-    words = set(w.lemmas()[0].name() for w in wordnet.synsets(word))
-
-
 def run(word, vocab):
+    '''realiza a correção da palavra para a palavra do vocubalario com menor 
+       distancia de edição
+
+    Args:
+        word: palavra a ser corrigida
+        vocab: palavras existentes
+    
+    Returns:
+        Palavra corrigida
+    '''
     if(word in vocab):
         return word
 
@@ -42,6 +58,19 @@ def run(word, vocab):
     for w in dist2(ed1):
         if(w) in vocab:
             return w
-
-    
+        
     return word
+
+
+def synonims(word):
+    '''Busca todos os sinonimos de uma palara com o wordnet
+
+    Args:
+        word: palavras para a qual os sinonimos devem ser enontrados
+    
+    Returns:
+        lista de sinonimos
+    '''
+    synonims = set(w.lemmas()[0].name() for w in wordnet.synsets(word))
+    
+    return synonims

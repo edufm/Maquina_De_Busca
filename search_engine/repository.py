@@ -100,7 +100,7 @@ def create_index(repo):
     return indexed
 
 
-def create_semantic_index(index):
+def create_semantic_index(repo):
     '''Indexa as palavras de um corpo para seu tipo semantico
 
     Args:
@@ -108,14 +108,38 @@ def create_semantic_index(index):
 
     Returns:
         A relação entre as palavras e seu tipo semantico
-    '''
-    indexed = defaultdict(lambda:defaultdict(int))
+    '''    
+    # Define as macro classes
+    translator = {"AT":"articles", "IN":"preposition", "LS":"marker", "DT":"determinator",
+                  "POS":"genitives", "TO":"to", "UH":"interjection",  "CC":"conjunction",
+                  "WDT":"wh", "WP":"wh", "WP$":"wh", "WRB":"wh", "EX":"there",
+                  "MD":"modal", "PDT":"pre-determiner",  "RP":"particle",
+                  "PRP":"pronoun", "PRP$":"pronoun",
+                  "FW":"foreing word", 
+                  "JJ":"adjective", "JJR":"adjective", "JJS":"adjective",
+                  "RB":"adverb", "RBR": "adverb", "RBS": "adverb",
+                  "VB":"verb", "VBG":"verb", "VBD":"verb", "VBN":"verb", "VBP":"verb", "VBZ":"verb",
+                  "NN":"noun", "NNS":"noun", "NNP":"proper noun", "NNPS":"proper noun",
+                  "CD":"number"}
     
-    for words in index.keys():
-        for word in words:
-            indexed[word] = word_type
-
-    return indexed
+    # Define os scores/2 das classes
+    points = {"articles":0, "marker":0, "genitives":0, "to":0, "determinator":0,
+              "preposition":0.05, "interjection":0.05, "conjunction":0.05, "wh":0.05, "there":0.05,
+              "modal":0.2, "pre-determiner":0.1, "particle":0.2, "pronoun":0.1,
+              "adjective":0.3, "adverb":0.3, "verb":0.4, "noun":0.4,  
+              "proper noun":0.5, "foreing word":0.5, "number":0.5}
+    
+    index = defaultdict(int)
+    for doc_id in repo.keys():
+        
+        semantic_index = nltk.pos_tag(repo[doc_id])
+        
+        for key, value in semantic_index:
+            index[doc_id] += 2*points[translator[value]]
+        
+        index[doc_id] = round(index[doc_id]/len(repo[doc_id]), 2)
+            
+    return index
 
 
 def save(data, file):

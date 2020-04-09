@@ -1,6 +1,6 @@
 import search_engine.repository as rp
  
-def run(target, corpus_file, repo_file=None, index_file=None,
+def run(target, corpus_file, repo_file=None, index_file=None, semantic_index_file=None,
         stopwords=(True, "preset"), normalize=(True, "lower")):
     '''Cria o index e um repositório a partir de um corpus previamente filtrado
 
@@ -21,6 +21,8 @@ def run(target, corpus_file, repo_file=None, index_file=None,
         repo_file = f"./storage/repo_{target}.json"
     if index_file == None:
         index_file = f"./storage/index_{target}.json"
+    if semantic_index_file == None:
+        index_file = f"./storage/semantic_index_{target}.json"
     
     # Abre o corpus
     corpus = rp.load(corpus_file)
@@ -28,8 +30,9 @@ def run(target, corpus_file, repo_file=None, index_file=None,
     # Gera os dados necessarios
     repo   = rp.create_repo(corpus, stopwords=stopwords, normalize=normalize)
     index  = rp.create_index(repo)
-    #semantic_index = rp.create_type_index(repo)
+    semantic_index = rp.create_semantic_index(repo)
     
     # Salva os dicinarios gerados
     rp.save(repo, repo_file)
     rp.save(index, index_file)
+    rp.save(semantic_index, semantic_index_file)

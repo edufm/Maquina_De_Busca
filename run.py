@@ -4,19 +4,19 @@ import search_engine as se
 def main():
     parser = ArgumentParser()
     parser.add_argument('target_corpus', 
-                        help='Arquivo json com um dicionario docid para texto'
+                        help='Nome do corpus NLTK alvo'
                         ,type= str, default= "reuters", nargs='?')
     
     parser.add_argument('query', 
-                        help='Arquivo json com um dicionario docid para texto',
+                        help='Query a ser buscada',
                         type= str, default= "(asian (US rise)) (export minister)", nargs='?')
     
     parser.add_argument('DOSETUP', 
-                        help='Arquivo json com um dicionario docid para texto',
+                        help='Se deve filtrar o corpus e montar repo e indexes',
                         type= bool, default= False, nargs='?')
 
     parser.add_argument('TESTMODE', 
-                        help='Arquivo json com um dicionario docid para texto',
+                        help='Se deve rodar com o arquivo inteiro ou uma versão reduzida',
                         type= bool, default= True, nargs='?')
 
     args = parser.parse_args()
